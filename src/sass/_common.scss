@@ -1,1 +1,38 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: Montserrat, sans-serif;
+  color: $main-color;
+
+  letter-spacing: 0.04em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
