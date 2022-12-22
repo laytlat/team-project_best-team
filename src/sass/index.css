@@ -1,4 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: Montserrat, sans-serif;
+  color: #fcfcfc;
+  letter-spacing: 0.04em;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -21,6 +27,12 @@ p {
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .example {
