@@ -4,6 +4,7 @@ ul {
   padding: 0;
 }
 .how-itsmade {
+  
 
   padding-top: 60px;
   padding-bottom: 180px;
@@ -171,8 +172,13 @@ ul {
   align-items: center;
 }
 
-/*.how-itsmade__img {
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  border-radius: 250px;
-}*/
+.how-itsmade__img {
+  position: absolute;
+  left: 16px;
+  top: 210px;
+  transform: translateY(-200%);
+}
+
+.how-itsmade__group {
+  position: relative;
+}
