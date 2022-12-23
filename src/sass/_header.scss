@@ -11,26 +11,31 @@
   display: flex;
   padding-top: 12px;
   outline: 1px solid red;
-  // justify-content: space-between;
+  justify-content: center;
+
+// tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
 }
 
 .menu-toggle {
   width: 32px;
-  height: 37px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  padding:5 0 0 0;
+  padding:0 0 0 0;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
   // border-radius: 50%;
   outline:1px solid blue;
-}
 
-@media screen and (min-width: 1200px) {
-  .menu-toggle {
+
+// desktop
+    @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -44,4 +49,49 @@
   &:focus {
     fill: $button-hover-color;
   }
+}
+
+// header button
+.header__button {
+  display: flex;
+  padding: 12px;
+  min-width: 152px;
+  background-color: $button-color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $button-text-color;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+    &:focus {
+      background-color: $button-hover-color;
+      color: $primary-white-color;
+    }
+// mobile
+    @media screen and (max-width: 767px) {
+      display: none;
+  }
+
+// tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 32px;
+  }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-arrow__icon {
+  // display: block;
+  fill: currentColor;
+  margin-left: 4px;
 }
