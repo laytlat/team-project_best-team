@@ -76,7 +76,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .product {
-    width: 768px;
+    width: 100%;
     background-image: url(../images/product/background_tablet.jpg);
   }
 }
@@ -87,7 +87,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .product {
-    width: 1200px;
+    width: 100%;
     background-image: url(../images/product/backgroud_desktop.jpg);
   }
 }
@@ -138,6 +138,7 @@ p {
 .prodcard {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-top: 148px;
   gap: 100px;
