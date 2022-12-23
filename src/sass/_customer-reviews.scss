@@ -1,14 +1,13 @@
-ul {
-  list-style: none;
-  padding: 0;
-}
 .customer-reviews .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 480px;
+  //  margin: 0 auto;
+
   padding-bottom: 393px;
+  @media screen and (max-width: 767px) {
+    min-width: 320px;
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 32px;
@@ -35,8 +34,8 @@ ul {
   }
 
   @media screen and (min-width: 768px) {
-    // transform: translateY(-144px);
-    // margin-bottom: 48px;
+    transform: translateY(-144px);
+    margin-bottom: -44px;
   }
 }
 .customers {
@@ -53,7 +52,16 @@ ul {
   margin-bottom: 32px;
 }
 .customer_review {
-  padding: 35px;
+  padding: 35px 39px;
+
+  @media screen and (min-width: 768px) {
+    padding: 28px 80px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
   background-color: $background-color;
   border-radius: 10px;
   border: none;
@@ -71,6 +79,11 @@ ul {
   font-size: 20px;
   line-height: 1.86;
   margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
 
   text-align: center;
   color: $secondary-color;
@@ -78,5 +91,5 @@ ul {
 .customer_dots {
   display: block;
   margin: 0 auto;
-  // margin-bottom: 393px;
+  // margin-bottom: 393px;   379px tablet
 }
