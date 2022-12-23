@@ -2,7 +2,46 @@
   background-color: $background-color;
 }
 
+.header__logo {
+  // display: block;
+  height: 37px;
+}
+
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  padding-top: 12px;
+  outline: 1px solid red;
+  // justify-content: space-between;
+}
+
+.menu-toggle {
+  width: 32px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding:5 0 0 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+  // border-radius: 50%;
+  outline:1px solid blue;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle__icon {
+  fill: $primary-white-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    fill: $button-hover-color;
+  }
 }
