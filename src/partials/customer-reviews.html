@@ -2,13 +2,37 @@
 <section class="customer-reviews">
   <div class="container">
     <div class="gallery">
-      <img
-        class="gallery_img"
-        src="./images/gallery/mobile/img1@1x.jpg"
-        alt="ice-creams"
-        width="280"
-        loading="lazy"
-      />
+      <picture
+        ><!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/gallery/desktop/img1@1x.jpg 1x,
+            ./images/gallery/desktop/img1@2x.jpg 2x
+          "
+          type="image/jpg" />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/gallery/tablet/img1@1x.jpg 1x,
+            ./images/gallery/tablet/img1@2x.jpg 2x
+          "
+          type="image/jpg" />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/gallery/mobile/img1@1x.jpg 1x,
+            ./images/gallery/mobile/img1@2x.jpg 2x
+          "
+          type="image/jpg" />
+        <img
+          class="gallery_img"
+          src="./images/gallery/mobile/img1@1x.jpg"
+          alt="ice-creams"
+          loading="lazy"
+      /></picture>
     </div>
 
     <div class="customers">
@@ -29,7 +53,13 @@
           </p>
         </li>
         <li class="customer_name">Emily, Los Angeles</li>
-        <li class=""><img class="customer_dots" src="./images/customer-reviews/mobile/dots@1x.png" alt=""></li>
+        <li class="">
+          <img
+            class="customer_dots"
+            src="./images/customer-reviews/mobile/dots@1x.png"
+            alt=""
+          />
+        </li>
       </ul>
     </div>
   </div>

@@ -6,22 +6,38 @@ ul {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  max-width: 320px;
-  // padding-top: 178px;
+  min-width: 320px;
+  max-width: 480px;
   padding-bottom: 393px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
-  background-image: url("../images/customer-reviews/mobile/img_fone@1x.png");
+  background-image: url('../images/customer-reviews/mobile/img_fone@1x.png');
 }
 // заглушка
 .test {
   background-color: aqua;
-  max-width: 320px;
-  height: 50px;
+  min-width: 320px;
+  max-width: 1200px;
+  height: 200px;
 }
 //
 .gallery_img {
-  transform: translateY(-32px);
-  margin-bottom: 48px;
+  display: block;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    transform: translateY(-32px);
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // transform: translateY(-144px);
+    // margin-bottom: 48px;
+  }
 }
 .customers {
   // display: flex;
@@ -59,8 +75,8 @@ ul {
   text-align: center;
   color: $secondary-color;
 }
-.customer_dots{
+.customer_dots {
   display: block;
   margin: 0 auto;
- // margin-bottom: 393px;
+  // margin-bottom: 393px;
 }
