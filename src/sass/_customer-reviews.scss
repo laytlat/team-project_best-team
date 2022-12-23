@@ -1,20 +1,49 @@
 .customer-reviews .container {
   //  margin: 0 auto;
 
-  padding-bottom: 393px;
   @media screen and (max-width: 767px) {
     min-width: 320px;
     max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 393px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-bottom: 379px;
   }
 
-  background-image: url('../images/customer-reviews/mobile/img_fone@1x.png');
+  ////----------стилизация под ретину-----------------
+  // Mobile screen
+  background-image: url(../images/customer-reviews/mobile/Backgroud_mobile@1x.png);
+  // retina mobile screen
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customer-reviews/mobile/Backgroud_mobile@2x.png);
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/customer-reviews/tablet/Background_tablet@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-reviews/tablet/Background_tablet@2x.png);
+    }
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/customer-reviews/desktop/Backgroud_desktop@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customer-reviews/desktop/Backgroud_desktop@2x.png);
+    }
+  }
 }
 // заглушка
 .test {
@@ -91,5 +120,4 @@
 .customer_dots {
   display: block;
   margin: 0 auto;
-  // margin-bottom: 393px;   379px tablet
 }
