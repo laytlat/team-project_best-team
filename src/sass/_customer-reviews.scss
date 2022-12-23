@@ -10,7 +10,7 @@ ul {
   // padding-top: 178px;
   padding-bottom: 393px;
 
-  background-color: red;
+  background-image: url("../images/customer-reviews/mobile/img_fone@1x.png");
 }
 // заглушка
 .test {
@@ -54,8 +54,13 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
+  margin-bottom: 12px;
 
   text-align: center;
-
   color: $secondary-color;
+}
+.customer_dots{
+  display: block;
+  margin: 0 auto;
+ // margin-bottom: 393px;
 }
