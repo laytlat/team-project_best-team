@@ -314,8 +314,15 @@ p {
   }
 }
 
+.prodcard__svg {
+  display: inline-block;
+  padding: 10px 10px;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .prodcard__iconarrow {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
