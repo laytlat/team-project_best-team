@@ -1,3 +1,7 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
 .customer-reviews .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -8,7 +12,50 @@
 
   background-color: red;
 }
-.gallery {
+// заглушка
+.test {
+  background-color: aqua;
+  max-width: 320px;
+  height: 50px;
+}
+//
+.gallery_img {
   transform: translateY(-32px);
-  margin-bottom: 80px;
+  margin-bottom: 48px;
+}
+.customers {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.customer_img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.customer_review {
+  padding: 35px;
+  background-color: $background-color;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 32px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.58;
+
+  text-align: center;
+}
+.customer_name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  color: $secondary-color;
 }
