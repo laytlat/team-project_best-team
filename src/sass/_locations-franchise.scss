@@ -1,8 +1,153 @@
 .button-location {
-  padding: 12px;
-  display: inline-block;
+  padding: 12px 42px;
+  display: flex;
+  align-items: center;
   background-color: $button-color;
-  margin: 10px;
-  color: $button-color;
+  color: $secondary-color;
   border-radius: 10px;
+  // border-color: $button-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  border-style: none;
+  // border: none;
+}
+.button-location:hover {
+  background-color: $button-hover-color;
+}
+.button-location:focus {
+  color: $button-focus-color;
+}
+.button-location:disabled {
+  background-color: $disabled-button-color;
+}
+
+.button-franchise {
+  padding: 12px 55px;
+  display: flex;
+  align-items: center;
+  background-color: $background-color;
+  color: $secondary-color;
+  border-radius: 10px;
+  border: 2px solid;
+
+  border-color: $button-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  // border: none;
+}
+.button-franchise:hover,
+.button-franchise:focus {
+  border-color: $button-hover-color;
+}
+
+.button-franchise:disabled {
+  border-color: $disabled-button-color;
+}
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  // background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.modal-footer {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100vw;
+  height: 100vh;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 28px;
+  background: $main-color;
+  border: 2px solid $button-color;
+  border-radius: 10px;
+  &__cross {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    fill: $secondary-color;
+    cursor: pointer;
+    border: none;
+    background-color: $main-color;
+  }
+  &__title {
+    margin-bottom: 22px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    // align-items: center;
+    // text-align: center;
+    color: $secondary-color;
+  }
+  &__text {
+    margin-bottom: 22px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $secondary-color;
+    text-align: left;
+  }
+}
+
+.form-franchise {
+  // width: 100vw;
+  &__label {
+  }
+  &__input {
+    padding: 8px 12px 7px 12px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    background: rgba(248, 210, 78, 0.1);
+    color: $secondary-color;
+    border: 1px solid $button-hover-color;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+}
+.textarea-franchise {
+  padding: 8px 12px 7px 12px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  background: rgba(248, 210, 78, 0.1);
+  color: $secondary-color;
+  border: 1px solid $button-hover-color;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
