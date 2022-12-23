@@ -1,0 +1,96 @@
+<!-- Элементы для вызова модальных окон, могут быть любые -->
+<!-- locations-franchise -->
+<button type="button" class="button-location js-open-modal" data-modal="4">
+  Our Locations
+</button>
+<button type="button" class="button-franchise js-open-modal" data-modal="5">
+  Franchise
+</button>
+<!-- <button data-modal-open type="button" class="button">Замовити послугу</button> -->
+
+<!-- modal-locations -->
+<div class="modal" data-modal="4">
+  <button class="modal__cross js-modal-close">
+    <svg class="modal__icon" width="20" height="20">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal__title">Our Locations</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.71155383743!2d34.557238549999994!3d49.60204445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2sPoltava%2C%20Poltava%20Oblast%2C%2036000!5e0!3m2!1sen!2sua!4v1671791326937!5m2!1sen!2sua"
+    width="100%"
+    height="199"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+  <a
+    class="footer-address__link link"
+    href="https://goo.gl/maps/VCjokpn6cVn6QoZP7"
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    >Open map</a
+  >
+</div>
+
+<!-- modal-franchise -->
+<div class="modal" data-modal="5">
+  <button class="modal__cross js-modal-close">
+    <svg class="modal__icon" width="20" height="20">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h3>
+  <p class="modal__title">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="form-franchise">
+    <label for="name" class="form-franchise__label"></label>
+    <input
+      type="text"
+      class="form-franchise__input"
+      name="name"
+      id="name"
+      placeholder="Name"
+    />
+
+    <label for="tel" class="form-franchise__label"></label>
+    <input
+      type="tel"
+      class="form-franchise__input"
+      name="phone"
+      id="tel"
+      placeholder="Phone"
+    />
+
+    <label for="mail" class="form-franchise__label"></label>
+    <input
+      type="email"
+      class="form-franchise__input"
+      name="email"
+      id="mail"
+      placeholder="Email"
+    />
+
+    <label for="comment" class="form-franchise__label"></label>
+    <textarea
+      class="textarea-franchise"
+      name="textarea"
+      id="comment"
+      rows="3"
+      placeholder="Comment"
+    ></textarea>
+
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
