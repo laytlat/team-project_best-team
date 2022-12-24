@@ -1,17 +1,20 @@
 <!-- Элементы для вызова модальных окон, могут быть любые -->
 <!-- locations-franchise -->
-<button type="button" class="button-location js-open-modal" data-modal="4">
-  Our Locations
-  <svg class="" width="12" height="12">
-    <use href="./images/sprite.svg#icon-button-arrow"></use>
-  </svg>
-</button>
-<button type="button" class="button-franchise js-open-modal" data-modal="5">
-  Franchise
-  <svg class="" width="12" height="12">
-    <use href="./images/sprite.svg#icon-button-arrow"></use>
-  </svg>
-</button>
+<div class="locations-franchise">
+  <button type="button" class="button-location js-open-modal" data-modal="4">
+    Our Locations
+    <svg class="" width="12" height="12">
+      <use href="./images/sprite.svg#icon-button-arrow"></use>
+    </svg>
+  </button>
+  <button type="button" class="button-franchise js-open-modal" data-modal="5">
+    Franchise
+    <svg class="" width="12" height="12">
+      <use href="./images/sprite.svg#icon-button-arrow"></use>
+    </svg>
+  </button>
+</div>
+
 <!-- <button data-modal-open type="button" class="button">Замовити послугу</button> -->
 
 <!-- modal-locations -->
@@ -22,18 +25,41 @@
     </svg>
   </button>
   <h3 class="modal-footer__title">Our Locations</h3>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.7474099429!2d34.487198880148334!3d49.60202332105672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1suk!2sua!4v1671831384881!5m2!1suk!2sua"
-    width="600"
-    height="450"
-    style="border: 0"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"
-  ></iframe>
+  <picture>
+    <!-- Tablet screen Desktop screen -->
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/map-desk.webp 1x, ./images/map-desk@2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/map-desk.jpg 1x, ./images/map-desk@2x.jpg 2x"
+      type="image/jpg"
+    />
+    <!-- Mobile screen -->
+    <source
+      media="(max-width: 768px)"
+      srcset="./images/map-mob.webp 1x, ./images/map-mob@2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(max-width: 768px)"
+      srcset="./images/map-mob.jpg 1x, ./images/map-mob@2x.jpg 2x"
+      type="image/jpg"
+    />
+    <img
+      class="modal-map"
+      src="./images/map-mob.jpg"
+      alt="Ноутбук"
+      width="450"
+      height="294"
+      loading="lazy"
+    />
+  </picture>
 
   <a
-    class="footer-address__link link"
+    class="open-map__link link"
     href="https://goo.gl/maps/VCjokpn6cVn6QoZP7"
     target="_blank"
     rel="noopener noreferrer nofollow"
@@ -66,6 +92,8 @@
       name="name"
       id="name"
       placeholder="Name"
+      pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}"
+      title="The password cannot be less than two characters and must contain at least one lowercase and one uppercase Latin letter."
     />
 
     <label for="tel" class="form-franchise__label"></label>
@@ -75,6 +103,9 @@
       name="phone"
       id="tel"
       placeholder="Phone"
+      pattern="(?=.*\d).{13,}"
+      title="Password cannot be
+    less than thirteen characters."
     />
 
     <label for="mail" class="form-franchise__label"></label>
@@ -84,6 +115,8 @@
       name="email"
       id="mail"
       placeholder="Email"
+      pattern=".+@icecream\.com"
+      title="Please provide only a Best Startup Ever corporate email address"
     />
 
     <label for="comment" class="form-franchise__label"></label>
@@ -95,7 +128,7 @@
       placeholder="Comment"
     ></textarea>
 
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button-submit">Submit</button>
   </form>
 </div>
 
