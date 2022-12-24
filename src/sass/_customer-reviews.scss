@@ -85,8 +85,15 @@
   margin-bottom: 32px;
 }
 .customer_review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 35px 39px;
-
+  @media screen and (min-width: 320px) {
+    .customer_review--mobile {
+      max-width: 202px;
+    }
+  }
   @media screen and (min-width: 768px) {
     padding: 28px 80px;
 
