@@ -5,14 +5,38 @@ ul {
 }
 .how-itsmade {
   
+  @media screen and (min-width: 0px) 
+  {
+    padding-top: 61px;
+    padding-bottom: 65px;
+  }  
 
-  padding-top: 60px;
-  padding-bottom: 180px;
+  @media screen and (min-width: 768px) 
+  {
+   padding-top: 60px;
+   padding-bottom: 180px;
+  }
 
   background-color: $background-color;
 }
 
 .how-itsmade__title {
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    max-width: 200px;
+    margin-bottom: 372px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.26667;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-color;
+
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -46,6 +70,19 @@ ul {
 
 .how-itsmade__label {
 
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    margin-bottom: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2222;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
     margin-bottom: 12px;
@@ -76,6 +113,13 @@ ul {
 
 .how-itsmade__list {
 
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    list-style: none;
+    margin-bottom: 10px;
+  }  
+
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
     list-style: none;
@@ -92,7 +136,16 @@ ul {
 
 
 .how-itsmade__item {
-  margin-bottom: 8px;
+
+  @media screen and (min-width: 0px) 
+  {
+    margin-bottom: 4px;
+  } 
+
+  @media screen and (min-width: 768px) 
+  {
+    margin-bottom: 8px;
+ }
 }
 
 .how-itsmade__item:last-child {
@@ -117,6 +170,18 @@ ul {
 }
 
 .how-itsmade__text--styleone {
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $main-color;
+  }  
+
   @media screen and (min-width: 1200px) 
   {
     font-family: 'Montserrat', sans-serif;
@@ -128,6 +193,18 @@ ul {
 }
 
 .how-itsmade__text--styletwo {
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162%;
+    text-align: center;
+    color: $main-color; 
+  }  
+
   @media screen and (min-width: 1200px) 
   {
    font-family: 'Montserrat', sans-serif;
@@ -140,6 +217,10 @@ ul {
 
 .how-itsmade__item--size {
 
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    max-width: 220px;
+  }  
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
     max-width: 334px;
@@ -151,6 +232,12 @@ ul {
 }
 
 .how-itsmade__item--last {
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
     max-width: 336px;
@@ -168,6 +255,11 @@ ul {
     margin-left: 600px;
   }
 
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    margin-bottom: 50px;
+  }  
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -211,9 +303,11 @@ ul {
 
 .how-itsmade__information {
 
-  display: flex;
-  justify-content: center;
-
+  @media screen and (min-width: 768px) 
+  {
+    display: flex;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -228,6 +322,11 @@ ul {
 }
 
 .how-itsmade__svg {
+
+  @media screen and (min-width: 0px) and (max-width: 767px)
+  {
+    margin-bottom: 16px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -246,9 +345,26 @@ ul {
  
 }
 
+.how-itsmade__svg--mobile {
+  @media screen and (min-width: 0px) and (max-width: 767px)
+  {
+    margin-bottom: 22px;
+  }
+}
+
 .how-itsmade__weight {
 
-  margin-bottom: 12px;
+
+  @media screen and (min-width: 0px) and (max-width: 767px)
+  {
+    margin-bottom: 16px;
+  }  
+
+  @media screen and (min-width: 768px) 
+  {
+    margin-bottom: 12px;
+  }
+  
 
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
