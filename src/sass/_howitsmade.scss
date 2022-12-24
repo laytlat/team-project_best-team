@@ -436,6 +436,8 @@ ul {
 
   @media screen and (min-width: 0px) and (max-width: 767px) 
   {
+    max-width: 230px;
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -493,11 +495,16 @@ ul {
 .how-itsmade__img {
   position: absolute;
 
-  @media screen and (min-width: 0px) and (max-width: 767px) 
+  @media screen and (min-width: 0px) and (max-width: 479px) 
   {
-    left: 20px;
-    top: 241px;
-    transform: translateY(-200%);
+    left: calc(50% - 140px);
+    transform: translateY(-440%);
+  } 
+
+  @media screen and (min-width: 480px) and (max-width: 767px) 
+  {
+    left: 80px;
+    transform: translateY(-440%);
   }  
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
