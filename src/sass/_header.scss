@@ -4,7 +4,24 @@
 
 .header__logo {
   // display: block;
+  width: 40px;
   height: 37px;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    width: 48px;
+    height: 44px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.logo-icon {
+  fill: black;
 }
 
 .main-nav {
@@ -31,7 +48,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   // border-radius: 50%;
-  outline:1px solid blue;
+  // outline:1px solid blue;
 
 
 // desktop
@@ -78,6 +95,7 @@
       background-color: $button-hover-color;
       color: $primary-white-color;
     }
+
 // mobile
     @media screen and (max-width: 767px) {
       display: none;
@@ -86,12 +104,13 @@
 // tablet
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .button-arrow__icon {
-  // display: block;
+// display: block;
   fill: currentColor;
   margin-left: 4px;
 }
