@@ -282,16 +282,38 @@ ul {
 
 .how-itsmade__desc {
 
-  max-width: 400px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    max-width: 152px;
+  }  
 
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 176%;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color:$main-color;
+  @media screen and (min-width: 1200px) 
+  {
+    max-width: 368px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+    text-align: center;
+    color: $main-color;
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color:$main-color;
+  }
 }
 
 
@@ -303,9 +325,32 @@ ul {
 
 .how-itsmade__img {
   position: absolute;
-  left: 16px;
-  top: 210px;
-  transform: translateY(-200%);
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    left: 32px;
+    top: 0;
+    transform: translateY(-200%);
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    left: 16px;
+    top: 210px;
+    transform: translateY(-200%);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    width: 330px;
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    width: 491px;
+  }  
+
 }
 
 .how-itsmade__group {

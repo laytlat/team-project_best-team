@@ -67,7 +67,15 @@
     </ul>
 
     <div class="how-itsmade__group">
-      <img class="how-itsmade__img" src="./images/cow.png" alt="cow" width="490">
+
+      <picture>
+        <source srcset="./images/cowtabletone.png 1x, ./images/cowtablettwo.png 2x"
+          media="screen and (min-width: 768px) and (max-width: 1199px)">
+        <source srcset="./images/cow.png 1x, ./images/cowdesctoptwo.png 2x" media="screen and (min-width: 1200px)">
+        <img class="how-itsmade__img" src="./images/cow.png" alt="cow">
+      </picture>
+
+
     </div>
   </div>
 </section>
