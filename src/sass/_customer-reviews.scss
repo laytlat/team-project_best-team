@@ -1,6 +1,4 @@
 .customer-reviews .container {
-  //  margin: 0 auto;
-
   @media screen and (max-width: 767px) {
     min-width: 320px;
     max-width: 480px;
@@ -79,13 +77,6 @@
     transform: translateY(-98px);
     margin-bottom: 42px;
   }
-}
-.customers {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // justify-content: space-between;
-  // align-items: center;
 }
 
 .customer_img {
