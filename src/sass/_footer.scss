@@ -40,6 +40,9 @@
   font-size: 34px;
   line-height: calc(41 / 34);
   text-transform: uppercase;
+  @media screen and(max-width: 767px){
+    margin-right: 100px;
+  }
   @media screen and(min-width: 768px) {
     font-size: 48px;
     letter-spacing: 0.06em;
