@@ -1,10 +1,12 @@
 .footer {
   width: 100%;
   background:$background-color;
+  position: relative;
+ 
+  
 }
-.border--container{
-  border-top: 1px solid #e1e1e1;
-}
+
+
 .footer--container {
   
 
@@ -139,6 +141,7 @@
   }
 }
 .copy__text {
+ 
   margin: 0;
   font-family: 'Montserrat';
   font-style: normal;
@@ -155,11 +158,18 @@
   }
   @media screen and(min-width:1200px) {
     font-size: 12px;
+      border-top: 1px solid #E1E1E1;
+      padding: 0 15px;
+    }
   }
-}
+  
 .copy {
- 
+  @media screen and(max-width:1199.07px){
+    border-top: 1px solid #E1E1E1;
+  }
+
   background:$background-color;
+ 
 }
 
 .footer__box {
