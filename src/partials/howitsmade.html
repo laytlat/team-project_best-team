@@ -33,7 +33,7 @@
 
 
     <ul class="how-itsmade__information">
-      <li class="how-itsmade__position">
+      <li class="how-itsmade__position how-itsmade__position--mobileone">
 
         <svg class="how-itsmade__svg">
           <use href="./images/sprite.svg#icon-cow"> </use>
@@ -43,7 +43,7 @@
 
         <p class="how-itsmade__desc">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
       </li>
-      <li class="how-itsmade__position">
+      <li class="how-itsmade__position how-itsmade__position--mobiletwo">
 
         <svg class="how-itsmade__svg">
           <use href="./images/sprite.svg#icon-weight"> </use>
@@ -69,6 +69,8 @@
     <div class="how-itsmade__group">
 
       <picture>
+        <source srcset="./images/cowmobileone.png 1x, ./images/cowmobiletwo.png 2x"
+          media="screen and (min-width: 0px) and (max-width: 767px)">
         <source srcset="./images/cowtabletone.png 1x, ./images/cowtablettwo.png 2x"
           media="screen and (min-width: 768px) and (max-width: 1199px)">
         <source srcset="./images/cow.png 1x, ./images/cowdesctoptwo.png 2x" media="screen and (min-width: 1200px)">

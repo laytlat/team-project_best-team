@@ -26,6 +26,8 @@ ul {
   {
     max-width: 200px;
     margin-bottom: 372px;
+    margin-right: auto;
+    margin-left: auto;
 
     font-family: 'Seymour One', sans-serif;
     font-weight: 400;
@@ -258,6 +260,8 @@ ul {
 
   @media screen and (min-width: 0px) and (max-width: 767px) 
   {
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 50px;
   }  
 
@@ -366,6 +370,18 @@ ul {
   }
   
 
+  @media screen and (min-width: 0px) and (max-width: 767px)
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2222;  
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase; 
+    color: $main-color;    
+  }  
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -393,7 +409,11 @@ ul {
 }
 
 .how-itsmade__weight--upper {
-  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) 
+  {
+    text-transform: uppercase;
+  }
 }
 
 .how-itsmade__desc {
@@ -406,6 +426,17 @@ ul {
   @media screen and (min-width: 1200px) 
   {
     max-width: 368px;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: $main-color;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
@@ -439,9 +470,29 @@ ul {
   align-items: center;
 }
 
+.how-itsmade__position--mobileone {
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+     margin-bottom: 28px;
+  }  
+}
+
+.how-itsmade__position--mobiletwo {
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+     margin-bottom: 22px;
+  }  
+}
+
 .how-itsmade__img {
   position: absolute;
 
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    left: 20px;
+    top: 241px;
+    transform: translateY(-200%);
+  }  
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
@@ -456,6 +507,11 @@ ul {
     top: 210px;
     transform: translateY(-200%);
   }
+
+  @media screen and (min-width: 0px) and (max-width: 767px) 
+  {
+    width: 280px;
+  } 
 
   @media screen and (min-width: 768px) and (max-width: 1199px) 
   {
