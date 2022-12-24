@@ -36,7 +36,9 @@ p {
   margin: 0 auto;
 }
 
-.locations-franchise {
+.test {
+  display: block;
+  text-align: center;
   justify-content: center;
   margin-left: auto;
 }
@@ -250,11 +252,6 @@ p {
 .overlay.active {
   opacity: 1;
   visibility: visible;
-.example .background {
-  height: 240px;
-  background-image: url("../images/logo.png");
-  background-size: cover;
-  background-position: center;
 }
 
 .product {
@@ -567,27 +564,29 @@ p {
   }
 }
 
-.footer--container {
-  max-width: 480px;
-  padding: 0 20px;
-  margin: 0 auto;
+.footer {
+  width: 100%;
   background: #84a178;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .footer--container {
+    padding: 0 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer--container {
-    max-width: 768px;
     padding: 0 33px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer--container {
-    max-width: 1200px;
     padding: 0 15px;
   }
 }
 
 .footer__slogan {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2222222222;
@@ -603,6 +602,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer__slogan {
     font-size: 30px;
+    font-weight: 400;
   }
 }
 
@@ -612,6 +612,11 @@ p {
   font-size: 34px;
   line-height: 1.2058823529;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .footer__text {
+    margin-right: 100px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__text {
@@ -628,7 +633,6 @@ p {
 
 @media screen and (max-width: 767px) {
   .footer__tittle {
-    margin-right: 66px;
     margin-bottom: 60px;
   }
 }
@@ -638,6 +642,7 @@ p {
     margin-bottom: 32px;
   }
 }
+
 .footer__list {
   display: flex;
   justify-content: end;
@@ -704,7 +709,7 @@ p {
 
 .footer__border {
   margin-top: 40px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   border-width: 100%;
 }
 
@@ -731,7 +736,7 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  color: #7A7A7A;
+  color: #7a7a7a;
   text-align: center;
   padding: 20 0;
   white-space: pre-wrap;
@@ -742,9 +747,21 @@ p {
     padding: 12 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .copy__text {
+    font-size: 12px;
+    border-top: 1px solid #E1E1E1;
+    padding: 12px 0;
+  }
+}
 
 .copy {
-  border-top: 1px solid #E1E1E1;
+  background: #84a178;
+}
+@media screen and (max-width: 1199.07px) {
+  .copy {
+    border-top: 1px solid #E1E1E1;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -756,6 +773,7 @@ p {
 @media screen and (min-width: 768px) {
   .footer__box {
     display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -766,7 +784,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer__flex {
-    margin-left: auto;
     margin-top: 35px;
   }
 }
