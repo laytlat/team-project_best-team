@@ -14,22 +14,55 @@ ul {
 
 .how-itsmade__title {
 
-  margin-bottom: 82px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
 
-  font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.25;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $main-color;
+    margin-bottom: 72px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2647;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-color;
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    margin-bottom: 82px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-color;
+  }
 }
 
 .how-itsmade__label {
 
-  margin-bottom: 25px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    margin-bottom: 12px;
 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.2272;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  @media screen and (min-width: 1200px) 
+  {
+  margin-bottom: 25px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 30px;
@@ -38,12 +71,23 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $main-color;
+  }
 }
 
 .how-itsmade__list {
-  list-style: none;
-  margin-left: 600px;
-  margin-bottom: 54px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    list-style: none;
+    margin-left: 385px;
+    margin-bottom: 32px;
+  }  
+  @media screen and (min-width: 1200px) 
+  {
+    list-style: none;
+    margin-left: 600px;
+    margin-bottom: 54px;
+  }
 }
 
 
@@ -55,31 +99,85 @@ ul {
   margin-bottom: 0;
 }
  
+
+.how-itsmade__text {
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: $main-color;
+  }
+}
+
+.how-itsmade__text--lineheight {
+  line-height: 194%;
+}
+
 .how-itsmade__text--styleone {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 176%;
-  letter-spacing: 0.04em;
-  color:$main-color;
+  @media screen and (min-width: 1200px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color:$main-color;
+  }
 }
 
 .how-itsmade__text--styletwo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  line-height: 194%;
-  letter-spacing: 0.04em;
-  color: $main-color;
+  @media screen and (min-width: 1200px) 
+  {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   line-height: 194%;
+   letter-spacing: 0.04em;
+   color: $main-color;
+  }
 }
 
 .how-itsmade__item--size {
-  max-width: 463px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    max-width: 334px;
+  }  
+  @media screen and (min-width: 1200px) 
+  {
+    max-width: 463px;
+  }
+}
+
+.how-itsmade__item--last {
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    max-width: 336px;
+  }  
 }
 
 .how-itsmade__button {
 
-  margin-left: 600px;
-  margin-bottom: 146px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    margin-left: 385px;
+  }  
+  @media screen and (min-width: 1200px) 
+  {
+    margin-left: 600px;
+  }
 
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    margin-bottom: 80px;
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    margin-bottom: 146px;
+  }
   display: flex;
   align-items: center;
 
@@ -115,14 +213,30 @@ ul {
 
   display: flex;
   justify-content: center;
-  gap: 32px; 
+
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    gap: 80px;
+  }  
+  @media screen and (min-width: 1200px) 
+  {
+    gap: 32px; 
+  }
 
   list-style: none;
 }
 
 .how-itsmade__svg {
 
-  margin-bottom: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    margin-bottom: 32px;
+  }  
+  @media screen and (min-width: 1200px) 
+  {
+    margin-bottom: 40px;
+  }
   padding: 7px;
 
   border-radius: 50%;
@@ -136,15 +250,30 @@ ul {
 
   margin-bottom: 12px;
 
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 1.22414;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: $main-color;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.22916;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $main-color;
+  }  
+
+  @media screen and (min-width: 1200px) 
+  {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.22414;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $main-color;
+  }
 }
 
 .how-itsmade__weight--upper {
