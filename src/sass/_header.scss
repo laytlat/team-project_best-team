@@ -8,9 +8,10 @@
   height: 37px;
 
   // tablet
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 48px;
-    height: 44px;
+    height: 46px;
+    padding-bottom: 2px;
   }
 
   // desktop
@@ -20,19 +21,60 @@
   }
 }
 
-.logo-icon {
-  fill: black;
-}
-
 .main-nav {
   display: flex;
   padding-top: 12px;
-  outline: 1px solid red;
-  justify-content: center;
+  
+  // tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+  }
+}
+
+// desktop navigation menu
+.site-nav {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 32px;
+    margin-left: 308px;
+  }
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+}
+
+.site-nav__link {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #FCFCFC;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover,
+  &:focus {color: $button-color;}
+}
+
+.mobile-menu {
+  margin-left: auto;
+  padding-top: 5px;
 
 // tablet
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
+    padding-top: 9px;
   }
 }
 
@@ -42,17 +84,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  padding:0 0 0 0;
+  padding: 0 0 0 0;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
-  // border-radius: 50%;
-  // outline:1px solid blue;
-
+  
 
 // desktop
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -69,10 +108,24 @@
 }
 
 // header button
+.btn-order {
+
+// tablet
+  @media screen and (min-width: 768px) {
+    padding-top: 4px;
+  }
+
+// desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: 20px;
+  }  
+}
+
 .header__button {
   display: flex;
-  padding: 12px;
+  // padding: 12px;
   min-width: 152px;
+  height: 42px;
   background-color: $button-color;
   font-style: normal;
   font-weight: 600;
@@ -97,8 +150,8 @@
     }
 
 // mobile
-    @media screen and (max-width: 767px) {
-      display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
 // tablet
@@ -106,11 +159,9 @@
     margin-left: 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  
 }
 
 .button-arrow__icon {
-// display: block;
   fill: currentColor;
   margin-left: 4px;
 }

@@ -2,18 +2,6 @@
     <header class="header">
       <div class="main-nav container">
         <a href="./index.html" class="logo header__logo link">
-          <!-- <svg class="logo__icon" width="40" height="37">
-            <use href="./images/sprite.svg#icon-logo"></use>
-          </svg> -->
-          <!-- <picture class="logo"-icon>
-            <source srcset="./images/sprite.svg#icon-logo" media="(min-width: 480px)">
-            <source srcset="./images/logo-tablet.svg" media="(min-width: 768px)">
-            <source srcset="./images/logo-desktop.svg" media="(min-width: 1200px)">
-            <img src="./images/logo.png"
-              width="40"
-              height="37"
-              alt="logo">
-          </picture> -->
           <img
                 srcset="
                 ./images/logo_40.png 40w,
@@ -28,33 +16,40 @@
                 alt="logo"
               />
         </a>
-        <!-- <nav>
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link link">Контакти</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link link">Контакти</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link link">Контакти</a>
-            </li>
-          </ul>
-        </nav> -->
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="menu-toggle__icon" width="32" height="32">
-            <use href="./images/sprite.svg#icon-open-menu"></use>
-          </svg>
-        </button>
-        <button type="button" class="header__button" data-modal-open>
-            <span>Buy now</span>
-            <svg class="button-arrow__icon" width="12" height="12">
-              <use href="./images/sprite.svg#icon-button-arrow"></use>
+          <nav>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="#home" class="site-nav__link link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#how-its-made" class="site-nav__link link">How it’s made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#products" class="site-nav__link link">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contact" class="site-nav__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="mobile-menu">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__icon" width="32" height="32">
+              <use href="./images/sprite.svg#icon-open-menu"></use>
             </svg>
-        </button>
+          </button>
+        </div>
+        <div class="btn-order">
+          <button type="button" class="header__button" data-modal-open>
+              <span>Buy now</span>
+              <svg class="button-arrow__icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-button-arrow"></use>
+              </svg>
+          </button>
+        </div>
       </div>
     </header>
