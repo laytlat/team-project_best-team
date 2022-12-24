@@ -2,8 +2,11 @@
   width: 100%;
   background:$background-color;
 }
-
+.border--container{
+  border-top: 1px solid #e1e1e1;
+}
 .footer--container {
+  
 
  @media screen and(max-width:767px){
   padding: 0 20px;
@@ -14,7 +17,6 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 0 15px;
-    border-top: 1px solid #e1e1e1;
   }
 }
 
@@ -156,9 +158,6 @@
   }
 }
 .copy {
-  @media screen and(max-width:1199.97px){
-    border-top: 1px solid #e1e1e1;
-  }
  
   background:$background-color;
 }
