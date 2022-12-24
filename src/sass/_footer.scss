@@ -14,6 +14,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 0 15px;
+    border-top: 1px solid #e1e1e1;
   }
 }
 
@@ -155,8 +156,10 @@
   }
 }
 .copy {
-  width: 100%;
-  border-top: 1px solid #e1e1e1;
+  @media screen and(max-width:1199.97px){
+    border-top: 1px solid #e1e1e1;
+  }
+ 
   background:$background-color;
 }
 
