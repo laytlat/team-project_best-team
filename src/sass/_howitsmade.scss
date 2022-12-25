@@ -716,7 +716,8 @@ ul {
   @media screen and (min-width: 0px) and (max-width: 767px) 
   {
     max-width: 224px;   
- 
+    margin-bottom: 28px;
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -729,6 +730,7 @@ ul {
   @media screen and (min-width: 768px) 
   {
     max-width: 448px;
+    margin-bottom: 32px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
