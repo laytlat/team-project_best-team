@@ -1,5 +1,5 @@
 <div class="container test"><!--  заглушка--></div>
-<section class="customer-reviews">
+<section class="customer-reviews" data-slider="customer-slider">
   <div class="container">
     <div class="gallery">
       <picture
@@ -35,57 +35,158 @@
       /></picture>
     </div>
 
-    <div class="customers">
-      <ul class="customer list">
-        <li>
-          <picture
-            ><!-- Desktop screen -->
-            <source
+    <div class="swiper customers">
+      <ul class="swiper-wrapper customer list">
+        <div class="swiper-slide">
+          <li>
+            <picture>
+              <!-- Desktop screen -->
+              <!--
+              <source
               media="(min-width: 1200px)"
               srcset="
                 ./images/customer-reviews/desktop/img1@1x.jpg 1x,
                 ./images/customer-reviews/desktop/img1@2x.jpg 2x
               "
               type="image/jpg" />
-            <!-- Tablet screen -->
-            <source
+            -->
+              <!-- Tablet screen -->
+              <!--
+             <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/customer-reviews/tablet/img1@1x.jpg 1x,
+                ./images/customer-reviews/tablet/img1@2x.jpg 2x
+              "
+              type="image/jpg" /> -->
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./images/customer-reviews/mobile/img1@1x.jpg 1x,
+                  ./images/customer-reviews/mobile/img1@2x.jpg 2x
+                "
+                type="image/jpg" />
+              <img
+                class="customer_img"
+                src="./images/customer-reviews/mobile/img1@1x.jpg"
+                alt="Emily, Los Angeles"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="customer_review">
+            <p class="customer_review--mobile">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+          </li>
+          <li class="customer_name">Emily, Los Angeles</li>
+        </div>
+        <div class="swiper-slide">
+          <li>
+            <picture>
+              <!-- Desktop screen -->
+              <!--
+              <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/customer-reviews/desktop/img1@1x.jpg 1x,
+                ./images/customer-reviews/desktop/img1@2x.jpg 2x
+              "
+              type="image/jpg" />
+            -->
+              <!-- Tablet screen -->
+              <!--
+             <source
               media="(min-width: 768px)"
               srcset="
                 ./images/customer-reviews/tablet/img1@1x.jpg 1x,
                 ./images/customer-reviews/tablet/img1@2x.jpg 2x
               "
               type="image/jpg" />
-            <!-- Mobile screen -->
-            <source
-              media="(max-width: 767px)"
+           -->
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./images/customer-reviews/mobile/img2@1x.jpg 1x,
+                  ./images/customer-reviews/mobile/img2@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="customer_img"
+                src="./images/customer-reviews/mobile/img2@1x.jpg"
+                alt="Bryan, New-York"
+                loading="lazy"
+              />
+            </picture>
+          </li>
+          <li class="customer_review">
+            <p class="customer_review--mobile">
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
+            </p>
+          </li>
+          <li class="customer_name">Bryan, New-York</li>
+        </div>
+        <div class="swiper-slide">
+          <li>
+            <picture>
+              <!-- Desktop screen -->
+              <!--
+              <source
+              media="(min-width: 1200px)"
               srcset="
-                ./images/customer-reviews/mobile/img1@1x.jpg 1x,
-                ./images/customer-reviews/mobile/img1@2x.jpg 2x
+                ./images/customer-reviews/desktop/img1@1x.jpg 1x,
+                ./images/customer-reviews/desktop/img1@2x.jpg 2x
               "
               type="image/jpg" />
-            <img
-              class="customer_img"
-              src="./images/customer-reviews/mobile/img1@1x.jpg"
-              alt="Emily, Los Angeles"
-              loading="lazy"
-          /></picture>
-        </li>
-        <li class="customer_review">
-          <p class="customer_review--mobile">
-            I love visiting your cafe. You prepare the most delicious ice cream
-            in Los Angeles! In addition, you have beautiful serving, cozy
-            atmosphere and polite staff.
-          </p>
-        </li>
-        <li class="customer_name">Emily, Los Angeles</li>
-        <li class="">
+            -->
+              <!-- Tablet screen -->
+              <!--
+             <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/customer-reviews/tablet/img1@1x.jpg 1x,
+                ./images/customer-reviews/tablet/img1@2x.jpg 2x
+              "
+              type="image/jpg" />
+           -->
+              <!-- Mobile screen -->
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./images/customer-reviews/mobile/img3@1x.jpg 1x,
+                  ./images/customer-reviews/mobile/img3@2x.jpg 2x
+                "
+                type="image/jpg" />
+              <img
+                class="customer_img"
+                src="./images/customer-reviews/mobile/img3@1x.jpg"
+                alt="Diana, Chicago"
+                loading="lazy"
+            /></picture>
+          </li>
+          <li class="customer_review">
+            <p class="customer_review--mobile">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+          </li>
+          <li class="customer_name">Diana, Chicago</li>
+        </div>
+        <!--<li class="">
           <img
             class="customer_dots"
             src="./images/customer-reviews/mobile/dots@1x.png"
             alt=""
           />
-        </li>
+        </li>-->
       </ul>
+      <ul class="swiper-pagination team__pagination"></ul>
     </div>
   </div>
 </section>
