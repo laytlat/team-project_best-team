@@ -7,7 +7,7 @@
 
     max-height: 915px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
@@ -17,8 +17,6 @@
     width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 20px; //для отладки
-    padding-bottom: 20px; //для отладки
   }
   background-color: $background-color;
 }
@@ -37,7 +35,7 @@
   @media screen and (min-width: 1200px) {
     gap: 32px;
     flex-direction: row;
-    // transform: translateY(-299px);
+    transform: translateY(-128px);
   }
 }
 
@@ -60,8 +58,8 @@
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 2 * 32px) / 3);
-    // padding: 40px 27px 40px 24px;
-    // font-size: 14px;
+    padding: 40px;
+    font-size: 16px;
   }
 }
 .contact__button {
@@ -85,14 +83,19 @@
   }
 }
 .location {
-  max-height: 94px;
+  max-height: calc(70px + 24px);
   margin-bottom: 24px;
   padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
-    max-height: 141px;
+    max-height: calc(109px + 32px);
     margin-bottom: 32px;
     padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: calc(88px + 32px);
+    // margin-bottom: 32px;
+    //padding-bottom: 32px;
   }
   border-bottom: 1px solid $line-color;
 }
@@ -112,15 +115,26 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .week {
-  max-height: 120px;
-
+  max-height: calc(96px + 24px);
   padding-bottom: 24px;
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
-    max-height: 144px;
+    max-height: calc(112px + 32px);
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: calc(132px + 32px);
     margin-bottom: 32px;
     padding-bottom: 32px;
   }
@@ -130,6 +144,11 @@
   color: $disabled-button-color;
   &--first {
     margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    &--first {
+      margin-bottom: 12px;
+    }
   }
 }
 .connect {
@@ -149,5 +168,14 @@
     &--first {
       margin-bottom: 4px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    &--first {
+      margin-bottom: 4px;
+    }
+    // &--last {
+    //  margin-bottom: -199px;
+    //  padding-bottom: 199px;
+    //}
   }
 }
