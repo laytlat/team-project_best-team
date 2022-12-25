@@ -23,7 +23,7 @@
           mood!</p>
       </li>
     </ul>
-    <button class="how-itsmade__button" type="button">
+    <button class="how-itsmade__button" type="button" data-modal-open>
       <span class="how-itsmade__span">Read more</span>
       <svg class="how-itsmade__icon">
         <use href="./images/sprite.svg#icon-button-arrow"></use>
@@ -81,3 +81,15 @@
     </div>
   </div>
 </section>
+
+<div class="backdrop backdrop--is-hidden" data-modal>
+  <div class="modal">
+
+    <button class="modal-button" data-modal-close>
+      <svg class="modal-button__icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+  </div>
+</div>

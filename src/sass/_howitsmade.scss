@@ -569,3 +569,61 @@ ul {
 .how-itsmade__group {
   position: relative;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-backdrop;
+}
+
+.backdrop--is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+
+  min-width: 568px;
+  min-height: 449px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $timing-function;
+  background-color: $main-color;
+  border-radius: 10px;
+  border: 2px solid $button-color;
+}
+
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.modal-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  margin-top: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  background-color: $main-color;
+  border: 1px solid $main-color;
+}
+
+.modal-button__icon
+{
+  width: 24px;
+  height: 24px;
+  fill: $secondary-color;
+}  
