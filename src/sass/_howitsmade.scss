@@ -590,6 +590,9 @@ ul {
 
 .modal {
 
+  opacity: 0;
+  visibility: hidden;
+
   @media screen and (min-width: 0px) and (max-width: 767px) 
   {
     min-width: 280px;
@@ -742,4 +745,9 @@ ul {
     line-height: 140%;
     color: $secondary-color;
   }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
 }
