@@ -30,7 +30,12 @@
   background-color: $button-hover-color;
 }
 .button-location:focus {
+  background-color: $button-hover-color;
+}
+.button-location:focus,
+.button-franchise:focus {
   color: $button-focus-color;
+  fill: $button-focus-color;
 }
 .button-location:disabled {
   background-color: $disabled-button-color;
@@ -77,10 +82,9 @@
 .modal-footer {
   opacity: 0;
   visibility: hidden;
-  // width: 100%;
 
   width: 100vw;
-  // height: 100vh;
+  height: 85vh;
   max-width: 280px;
   overflow-y: auto;
 
@@ -117,21 +121,17 @@
     margin-bottom: 22px;
     font-family: 'Seymour One';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
-    // align-items: center;
-    // text-align: center;
     color: $secondary-color;
   }
   @media screen and (min-width: 768px) {
     &__title {
-      margin-left: auto;
-      margin-right: auto;
+      padding-left: 40px;
+      padding-right: 40px;
       font-size: 20px;
       line-height: calc(28 / 20);
-      width: 322px;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
     }
   }
   &__text {
@@ -212,7 +212,9 @@
   background: $button-color;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
+
 .button-submit {
   font-weight: 600;
   font-size: 12px;
@@ -223,8 +225,22 @@
   background: $button-color;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
-
+.open-map__link:hover,
+.button-submit:hover {
+  background-color: $button-hover-color;
+}
+.open-map__link:focus,
+.button-submit:focus {
+  background-color: $button-hover-color;
+  color: $button-focus-color;
+  fill: $button-focus-color;
+}
+.open-map__link:disabled,
+.button-submit:disabled {
+  background-color: $disabled-button-color;
+}
 .modal.active,
 .overlay.active {
   opacity: 1;

@@ -1,13 +1,13 @@
 <!-- Элементы для вызова модальных окон, могут быть любые -->
 <!-- locations-franchise -->
 <div class="locations-franchise">
-  <button type="button" class="button-location js-open-modal" data-modal="4">
+  <button type="button" class="button-location js-open-modal" data-modal="6">
     Our Locations
     <svg class="" width="12" height="12">
       <use href="./images/sprite.svg#icon-button-arrow"></use>
     </svg>
   </button>
-  <button type="button" class="button-franchise js-open-modal" data-modal="5">
+  <button type="button" class="button-franchise js-open-modal" data-modal="7">
     Franchise
     <svg class="" width="12" height="12">
       <use href="./images/sprite.svg#icon-button-arrow"></use>
@@ -18,7 +18,7 @@
 <!-- <button data-modal-open type="button" class="button">Замовити послугу</button> -->
 
 <!-- modal-locations -->
-<div class="modal modal-footer" data-modal="4">
+<div class="modal modal-footer" data-modal="6">
   <button class="modal-footer__cross js-modal-close">
     <svg class="modal-footer__icon" width="20" height="20">
       <use href="./images/sprite.svg#icon-close"></use>
@@ -68,7 +68,7 @@
 </div>
 
 <!-- modal-franchise -->
-<div class="modal modal-footer" data-modal="5">
+<div class="modal modal-footer" data-modal="7">
   <button class="modal-footer__cross js-modal-close">
     <svg class="modal-footer__icon" width="20" height="20">
       <use href="./images/sprite.svg#icon-close"></use>
@@ -92,8 +92,6 @@
       name="name"
       id="name"
       placeholder="Name"
-      pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}"
-      title="The password cannot be less than two characters and must contain at least one lowercase and one uppercase Latin letter."
     />
 
     <label for="tel" class="form-franchise__label"></label>
@@ -103,7 +101,7 @@
       name="phone"
       id="tel"
       placeholder="Phone"
-      pattern="(?=.*\d).{13,}"
+      pattern="(?=.*\d).{10,}"
       title="Password cannot be
     less than thirteen characters."
     />
@@ -115,8 +113,6 @@
       name="email"
       id="mail"
       placeholder="Email"
-      pattern=".+@icecream\.com"
-      title="Please provide only a Best Startup Ever corporate email address"
     />
 
     <label for="comment" class="form-franchise__label"></label>
