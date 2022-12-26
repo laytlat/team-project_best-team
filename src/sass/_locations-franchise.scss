@@ -2,15 +2,23 @@
   display: block;
   text-align: center;
   background-color: $background-color;
-  padding-top: 278px;
-  padding-bottom: 40px;
-}
-@media screen and (min-width: 768px) {
-  .locations-franchise {
-    display: flex;
-    justify-content: center;
+  // padding-top: 278px;
+  // padding-bottom: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 120px;
   }
 }
+
 .button-location {
   padding: 12px 42px;
   display: flex;
@@ -18,11 +26,13 @@
   background-color: $button-color;
   color: $secondary-color;
   border-radius: 10px;
-  // border-color: $button-color;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   border-style: none;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
 
   // border: none;
 }
@@ -76,9 +86,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  // width: 100vw;
-  // height: 100vh;
-  // background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
 }
@@ -156,7 +163,6 @@
     line-height: calc(15 / 12);
     color: $secondary-color;
     padding: 12px 34px;
-    // margin-bottom: 0;
     background: $button-color;
     border-radius: 10px;
     border: none;
@@ -248,8 +254,6 @@
 }
 
 .form-franchise {
-  // width: 100vw;
-
   &__input {
     padding: 8px 12px 7px 12px;
     width: 100%;
