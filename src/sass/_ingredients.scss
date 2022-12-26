@@ -15,6 +15,9 @@
  .modal {
     opacity: 0;
     visibility: hidden;
+    
+ }
+ .ingredients{
     width: 100%;
     max-width: 280px;
     height: 100%;
@@ -35,7 +38,7 @@
     @media screen and (min-width:768px) {
         max-width:568px;
         max-height: 996px;
-        
+        padding: 40px;   
     }
  }
  .modal.active,
@@ -56,7 +59,7 @@
  .modal__close:hover{
     fill: #2196f3;
 }
-.modal__title{
+.ingredients__pretitle{
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 20px;
@@ -65,10 +68,12 @@
     color: $secondary-color;
     margin-bottom: 20px;
 }
-
-.modal__image{
+.ingredients__photo{
+    display: flex;
+    justify-content: center;
+}
+.ingredients__image{
     display: block;
-    margin: auto;
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 border-radius: 100px;
@@ -84,7 +89,7 @@ border-bottom: solid 10px rgba(153, 114, 23, 0.25);
 box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 border-bottom: solid 10px rgba(0, 0, 0, 0.25);
 }
-.modal__calories{
+.calories{
 font-family: 'Montserrat';
 font-weight: 500;
 font-size: 12px;
@@ -157,7 +162,12 @@ line-height: 1.2;
     border: 2px solid #D6936D;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
-.modal__input{
+.calories__components{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+}
+.ingredients__input{
     width: 100%;
     max-width: 240px;
     height: 42px;
@@ -172,7 +182,7 @@ padding: 10px;
 }
 }
 
-.modal__textarea{
+.ingredients__textarea{
     width: 100%;
     height: 100%;
     max-height: 84px;
@@ -195,14 +205,14 @@ resize: none;
 .modal-fifth{
     border: 1px solid #D6936D;  
 }
-.modal__input::placeholder{
+.ingredients__input::placeholder{
     font-family: 'Montserrat';
 font-weight: 400;
 font-size: 14px;
 line-height: 1.4;
 color: $secondary-color;
 }
-.modal__textarea::placeholder{
+.ingredients__textarea::placeholder{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -210,12 +220,12 @@ color: $secondary-color;
     line-height: 1.4;
     color: $secondary-color;
 }
-.modal__input:focus,
-.modal__textarea:focus {
+.ingredients__input:focus,
+.ingredients__textarea:focus {
   border: 1px solid  #2196f3;
   outline: transparent;
 }
-.modal__button{
+.ingredients__button{
     width: 100%;
     max-width: 132px;
     height: 42px;
