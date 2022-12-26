@@ -50,9 +50,8 @@
   background-color: aqua;
   min-width: 320px;
   max-width: 1200px;
-  height: 200px;
+  height: 300px;
 }
-//
 
 .gallery_img {
   display: block;
@@ -78,6 +77,8 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
+
+  border-radius: 43px;
 }
 .customer_review {
   display: flex;
