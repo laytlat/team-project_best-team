@@ -17,31 +17,31 @@
   background-size: cover;
   ////----------стилизация под ретину-----------------
   // Mobile screen
-  background-image: url(../images/customer-reviews/mobile/Backgroud_mobile@1x.png);
+  background-image: url(../images/customer-reviews/background/backgroud_mobile@1x.png);
   // retina mobile screen
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/customer-reviews/mobile/Backgroud_mobile@2x.png);
+    background-image: url(../images/customer-reviews/background/backgroud_mobile@2x.png);
   }
 
   // Tablet screen
   @media screen and (min-width: 768px) {
-    background-image: url(../images/customer-reviews/tablet/Background_tablet@1x.png);
+    background-image: url(../images/customer-reviews/background/background_tablet@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customer-reviews/tablet/Background_tablet@2x.png);
+      background-image: url(../images/customer-reviews/background/background_tablet@2x.png);
     }
   }
 
   // Desktop screen
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/customer-reviews/desktop/Backgroud_desktop@1x.png);
+    background-image: url(../images/customer-reviews/background/backgroud_desktop@1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/customer-reviews/desktop/Backgroud_desktop@2x.png);
+      background-image: url(../images/customer-reviews/background/backgroud_desktop@2x.png);
     }
   }
 }
@@ -124,7 +124,15 @@
   text-align: center;
   color: $secondary-color;
 }
-.customer_dots {
-  display: block;
-  margin: 0 auto;
+
+.customer__pagination {
+  &.swiper-pagination {
+    bottom: 0;
+  }
+  .swiper-pagination-bullet {
+    background: $pagination-color;
+    &.swiper-pagination-bullet-active {
+      background: $background-color;
+    }
+  }
 }
