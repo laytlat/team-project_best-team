@@ -1,5 +1,4 @@
-<div class="container test"><!--  заглушка--></div>
-<section class="customer-reviews" data-slider="customer-slider">
+<section class="customer-reviews">
   <div class="container">
     <div class="gallery">
       <picture
@@ -33,115 +32,123 @@
           alt="ice-creams"
           loading="lazy"
       /></picture>
-      <!--
-      <div class="image image_01"></div>
-      <div class="image image_02"></div>
-      <div class="image image_03"></div>
-      <div class="image image_04"></div>-->
     </div>
-    <div class="swiper customers">
-      <ul class="swiper-wrapper customer list">
-        <div class="swiper-slide">
-          <li>
-            <img
-              srcset="
-                ./images/customer-reviews/customer/img_cust1@1x.jpg 1x,
-                ./images/customer-reviews/customer/img_cust1@2x.jpg 2x
-              "
-              class="customer_img"
-              src="./images/customer-reviews/customer/img_cust1@1x.jpg"
-              alt="Emily, Los Angeles"
-              loading="lazy"
-            />
-          </li>
-          <li class="customer_review">
-            <p class="customer_review--mobile">
-              I love visiting your cafe. You prepare the most delicious ice
-              cream in Los Angeles! In addition, you have beautiful serving,
-              cozy atmosphere and polite staff.
-            </p>
-          </li>
-          <li class="customer_name">Emily, Los Angeles</li>
+    <div data-slider="customer-slider">
+      <div class="swiper customers">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <ul class="customer list">
+              <li>
+                <img
+                  srcset="
+                    ./images/customer-reviews/customer/img_cust1@1x.jpg 1x,
+                    ./images/customer-reviews/customer/img_cust1@2x.jpg 2x
+                  "
+                  class="customer_img"
+                  src="./images/customer-reviews/customer/img_cust1@1x.jpg"
+                  alt="Emily, Los Angeles"
+                  loading="lazy"
+                />
+              </li>
+              <li class="customer_review">
+                <p class="customer_review--mobile">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+              </li>
+              <li class="customer_name">Emily, Los Angeles</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="customer list">
+              <li>
+                <img
+                  srcset="
+                    ./images/customer-reviews/customer/img_cust2@1x.jpg 1x,
+                    ./images/customer-reviews/customer/img_cust2@2x.jpg 2x
+                  "
+                  class="customer_img"
+                  src="./images/customer-reviews/customer/img_cust2@1x.jpg"
+                  alt="Bryan, New-York"
+                  loading="lazy"
+                />
+              </li>
+              <li class="customer_review">
+                <p class="customer_review--mobile">
+                  Every day we come to you with friends after classes in
+                  college. We love your ice cream and casual atmosphere!
+                </p>
+              </li>
+              <li class="customer_name">Bryan, New-York</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="customer list">
+              <li>
+                <img
+                  srcset="
+                    ./images/customer-reviews/customer/img_cust3@1x.jpg 1x,
+                    ./images/customer-reviews/customer/img_cust3@2x.jpg 2x
+                  "
+                  class="customer_img"
+                  src="./images/customer-reviews/customer/img_cust3@1x.jpg"
+                  alt="Diana, Chicago"
+                  loading="lazy"
+                />
+              </li>
+              <li class="customer_review">
+                <p class="customer_review--mobile">
+                  Ice cream is my passion! I love your chocolate hazelnut ice
+                  cream! And I really like the excellent service - always served
+                  politely and quickly!
+                </p>
+              </li>
+              <li class="customer_name">Diana, Chicago</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="customer list">
+              <li>
+                <img
+                  class="customer_img"
+                  src="./images/customer-reviews/customer/carlson.jpg"
+                  alt="Carlson, Stockholm"
+                  loading="lazy"
+                />
+              </li>
+              <li class="customer_review">
+                <p class="customer_review--mobile">
+                  In addition to jam and buns, I really love this ice cream and
+                  always eat it with pleasure.
+                </p>
+              </li>
+              <li class="customer_name">Carlson, Stockholm</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="customer list">
+              <li>
+                <img
+                  class="customer_img"
+                  src="./images/customer-reviews/customer/afgan.jpg"
+                  alt="Afghan citizen"
+                  loading="lazy"
+                />
+              </li>
+              <li class="customer_review">
+                <p class="customer_review--mobile">
+                  It's very hot in our country. Even very, very. And even at
+                  night. And only this ice cream saves from the heat.
+                </p>
+              </li>
+              <li class="customer_name">Afghan citizen</li>
+            </ul>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <li>
-            <img
-              srcset="
-                ./images/customer-reviews/customer/img_cust2@1x.jpg 1x,
-                ./images/customer-reviews/customer/img_cust2@2x.jpg 2x
-              "
-              class="customer_img"
-              src="./images/customer-reviews/customer/img_cust2@1x.jpg"
-              alt="Bryan, New-York"
-              loading="lazy"
-            />
-          </li>
-          <li class="customer_review">
-            <p class="customer_review--mobile">
-              Every day we come to you with friends after classes in college. We
-              love your ice cream and casual atmosphere!
-            </p>
-          </li>
-          <li class="customer_name">Bryan, New-York</li>
-        </div>
-        <div class="swiper-slide">
-          <li>
-            <img
-              srcset="
-                ./images/customer-reviews/customer/img_cust3@1x.jpg 1x,
-                ./images/customer-reviews/customer/img_cust3@2x.jpg 2x
-              "
-              class="customer_img"
-              src="./images/customer-reviews/customer/img_cust3@1x.jpg"
-              alt="Diana, Chicago"
-              loading="lazy"
-            />
-          </li>
-          <li class="customer_review">
-            <p class="customer_review--mobile">
-              Ice cream is my passion! I love your chocolate hazelnut ice cream!
-              And I really like the excellent service - always served politely
-              and quickly!
-            </p>
-          </li>
-          <li class="customer_name">Diana, Chicago</li>
-        </div>
-        <div class="swiper-slide">
-          <li>
-            <img
-              class="customer_img"
-              src="./images/customer-reviews/customer/carlson.jpg"
-              alt="Carlson, Stockholm"
-              loading="lazy"
-            />
-          </li>
-          <li class="customer_review">
-            <p class="customer_review--mobile">
-              In addition to jam and buns, I really love this ice cream and
-              always eat it with pleasure.
-            </p>
-          </li>
-          <li class="customer_name">Carlson, Stockholm</li>
-        </div>
-        <div class="swiper-slide">
-          <li>
-            <img
-              class="customer_img"
-              src="./images/customer-reviews/customer/afgan.jpg"
-              alt="Afghan citizen"
-              loading="lazy"
-            />
-          </li>
-          <li class="customer_review">
-            <p class="customer_review--mobile">
-              It's very hot in our country. Even very, very. And even at night.
-              And only this ice cream saves from the heat.
-            </p>
-          </li>
-          <li class="customer_name">Afghan citizen</li>
-        </div>
-      </ul>
-      <div class="swiper-pagination customer__pagination"></div>
+
+        <div class="swiper-pagination customer__pagination"></div>
+      </div>
     </div>
   </div>
 </section>
