@@ -263,7 +263,6 @@
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: linear;
-
     &:hover {
       background-color: $button-hover-color;
     }
@@ -288,3 +287,4 @@
   fill: currentColor;
   margin-left: 4px;
 }
+

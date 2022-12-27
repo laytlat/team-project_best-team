@@ -1,0 +1,67 @@
+<div class="modal order" data-modal="9">
+    <button class="modal__close js-modal-close">
+      <svg class="modal__close-icon" width="20" height="20">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Buy now</h2>
+    <form name="form-order" class="order__form"> 
+      <div class="input-line check-line">
+            <input
+              id="checkbox-agree"
+              name="checkbox-agree"
+              type="checkbox"
+              class="visually-hidden"
+            />
+            <label for="checkbox-agree" class="checkbox-agree">
+              <span class="icon-wrapper">
+                <!-- <svg class="agree-icon" width="13" height="9">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> -->
+              </span>
+              <span>Погоджуюся з розсилкою та приймаю</span>
+              <a href="" class="agree-text link">Умови договору</a>
+            </label>
+          </div>
+      <div class="order__wrapper">
+        <input 
+          name="user-name"
+          id="user-name"
+          type="text"
+          class="order__input"
+          placeholder="Name"
+          pattern="[A-Za-z]{1,32}"
+          required
+        >
+      </div>
+      <div class="order__wrapper">
+        <input
+          name="user-tel"
+          id="user-tel"
+          type="number"
+          class="order__input"
+          placeholder="Phone"
+          pattern="^\d{3}-\d{4}-\d{2}-\d{2}$"
+          required
+        >
+      </div>
+      <textarea
+        name="user-text"
+        id="user-text"
+        placeholder="Comment"
+        cols="30"
+        rows="10"
+        class="order__textarea"
+      >
+      </textarea>
+      <button 
+        type="submit"
+        class="order__button"
+      >
+      Submit
+      </button>
+    </form>
+</div>
+
+  <!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
