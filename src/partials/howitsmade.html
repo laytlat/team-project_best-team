@@ -2,40 +2,53 @@
   <div class="container">
     <p class="how-itsmade__label">tradition and love</p>
     <h2 class="how-itsmade__title">how it's made?</h2>
-    <ul class="how-itsmade__list">
-      <li class="how-itsmade__item how-itsmade__item--size">
-        <p class="how-itsmade__text how-itsmade__text--styleone">
-          Ice is a place where you will become not only a little happier, but
-          also healthier. Health is the main value for us, and we follow it when
-          creating our handmade desserts.
-        </p>
-      </li>
-      <li class="how-itsmade__item how-itsmade__item--size">
-        <p class="how-itsmade__text how-itsmade__text--styletwo">
-          We use traditional recipes and 100% natural ingredients. Our products
-          are so natural that they can be given to children from the age of
-          three years. Sweets lovers can expect 55 types of ice cream, 15 types
-          of coffee and 23 milkshakes.
-        </p>
-      </li>
-      <li class="how-itsmade__item how-itsmade__item--last">
-        <p
-          class="how-itsmade__text how-itsmade__text--styletwo how-itsmade__text--lineheight"
-        >
-          This is enough to choose ice cream and coffee for any mood!
-        </p>
-      </li>
-    </ul>
-    <button
-      class="how-itsmade__button js-open-modal active"
-      type="button"
-      data-modal="8"
-    >
-      <span class="how-itsmade__span">Read more</span>
-      <svg class="how-itsmade__icon">
-        <use href="./images/sprite.svg#icon-button-arrow"></use>
-      </svg>
-    </button>
+    <div class="group__information">
+
+      <picture class="how-itsmade__picture">
+        <source srcset="./images/cowmobileone.png 1x, ./images/cowmobiletwo.png 2x"
+          media="screen and (min-width: 0px) and (max-width: 767px)" />
+        <source srcset="./images/cowtabletone.png 1x, ./images/cowtablettwo.png 2x"
+          media="screen and (min-width: 768px) and (max-width: 1199px)" />
+        <source srcset="./images/cow.png 1x, ./images/cowdesctoptwo.png 2x" media="screen and (min-width: 1200px)" />
+        <img class="how-itsmade__img" src="./images/cow.png" alt="cow" />
+      </picture>
+
+      <div class="group__button">
+        <ul class="how-itsmade__list">
+          <li class="how-itsmade__item how-itsmade__item--size">
+            <p class="how-itsmade__text how-itsmade__text--styleone">
+              Ice is a place where you will become not only a little happier, but
+              also healthier. Health is the main value for us, and we follow it when
+              creating our handmade desserts.
+            </p>
+          </li>
+          <li class="how-itsmade__item how-itsmade__item--size">
+            <p class="how-itsmade__text how-itsmade__text--styletwo">
+              We use traditional recipes and 100% natural ingredients. Our products
+              are so natural that they can be given to children from the age of
+              three years. Sweets lovers can expect 55 types of ice cream, 15 types
+              of coffee and 23 milkshakes.
+            </p>
+          </li>
+          <li class="how-itsmade__item how-itsmade__item--last">
+            <p class="how-itsmade__text how-itsmade__text--styletwo how-itsmade__text--lineheight">
+              This is enough to choose ice cream and coffee for any mood!
+            </p>
+          </li>
+        </ul>
+
+        <button class="how-itsmade__button js-open-modal active" type="button" data-modal="8">
+          <span class="how-itsmade__span">Read more</span>
+          <svg class="how-itsmade__icon">
+            <use href="./images/sprite.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+
+
 
     <ul class="how-itsmade__information">
       <li class="how-itsmade__position how-itsmade__position--mobileone">
@@ -72,24 +85,6 @@
         </p>
       </li>
     </ul>
-
-    <div class="how-itsmade__group">
-      <picture>
-        <source
-          srcset="./images/cowmobileone.png 1x, ./images/cowmobiletwo.png 2x"
-          media="screen and (min-width: 0px) and (max-width: 767px)"
-        />
-        <source
-          srcset="./images/cowtabletone.png 1x, ./images/cowtablettwo.png 2x"
-          media="screen and (min-width: 768px) and (max-width: 1199px)"
-        />
-        <source
-          srcset="./images/cow.png 1x, ./images/cowdesctoptwo.png 2x"
-          media="screen and (min-width: 1200px)"
-        />
-        <img class="how-itsmade__img" src="./images/cow.png" alt="cow" />
-      </picture>
-    </div>
   </div>
 </section>
 
@@ -102,14 +97,9 @@
 
   <h2 class="modal-title">How it's made?</h2>
 
-  <iframe
-    class="modal-frame"
-    src="https://www.youtube.com/embed/w4qRrt3HwGg"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
+  <iframe class="modal-frame" src="https://www.youtube.com/embed/w4qRrt3HwGg" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 
   <p class="modal-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
