@@ -42,7 +42,18 @@
             border: 2px solid $button-color;
             border-radius: 10px;
             background-color: $background-color;
+            &:hover{
+                border-color: $button-hover-color;
+            }
+            &:focus{
+                border-color: $button-hover-color;
+                color: $button-focus-color;
+            }
+            &:disabled{
+                border-color: $disabled-button-color;
+            }
         }
+
         &__href{
             margin-left: 34px;
 
@@ -56,6 +67,15 @@
             text-align: center  ;
             text-decoration-line: underline;
             color: $button-color;
+            &:hover{
+                color: $button-hover-color;
+            }
+            &:focus{
+                color: $button-focus-color;
+            }
+            &:disabled{
+                color: $disabled-button-color;
+            }
         }
     }
 
@@ -109,7 +129,7 @@
     .hero-sub{
         display: block;
         margin-top: 22px;
-        padding-right: 16px;
+        padding-right: 32px;
         list-style-type: none;
         top: 0;
         right: 0;
