@@ -24,7 +24,7 @@
 .main-nav {
   display: flex;
   padding-top: 12px;
-  
+
   // tablet
   @media screen and (min-width: 768px) {
     padding-top: 20px;
@@ -63,14 +63,16 @@
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: linear;
-    &:hover,
-    &:focus {color: $button-color;}
+  &:hover,
+  &:focus {
+    color: $button-color;
+  }
 }
 .mobile-menu {
   margin-left: auto;
   padding-top: 5px;
 
-// tablet
+  // tablet
   @media screen and (min-width: 768px) {
     padding-top: 9px;
   }
@@ -93,7 +95,7 @@
   transition: transform 250ms linear;
   overflow: auto;
 
-// tablet
+  // tablet
   @media screen and (min-width: 768px) {
     padding-top: 20px;
     padding-left: 32px;
@@ -127,9 +129,8 @@
   background-color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
-  
 
-// desktop
+  // desktop
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -151,7 +152,7 @@
   text-align: center;
   margin-top: 51px;
 
-// tablet
+  // tablet
   @media screen and (min-width: 768px) {
     margin-top: 76px;
   }
@@ -159,14 +160,14 @@
 
 .mobile-nav__item {
   &:not(:last-child) {
-      margin-bottom: 32px;
-    }
+    margin-bottom: 32px;
+  }
 
-// tablet
+  // tablet
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 40px;
-    }    
+    }
   }
 }
 
@@ -179,13 +180,15 @@
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: linear;
-    &:hover,
-    &:focus {color: $secondary-color;}
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
 
-// tablet
-@media screen and (min-width: 768px) {
-  font-size: 48px;
-  line-height: 1.22;
+  // tablet
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.22;
   }
 }
 
@@ -215,15 +218,15 @@
   transition-duration: 250ms;
   transition-timing-function: linear;
 
-    &:hover {
-      background-color: $button-hover-color;
-    }
-    &:focus {
-      background-color: $button-hover-color;
-      color: $primary-white-color;
-    }
+  &:hover {
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    background-color: $button-hover-color;
+    color: $primary-white-color;
+  }
 
-// mobile
+  // mobile
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -231,17 +234,16 @@
 
 // header button
 .btn-order {
-
-// tablet
+  // tablet
   @media screen and (min-width: 768px) {
     padding-top: 3px;
   }
 
-// desktop
+  // desktop
   @media screen and (min-width: 1200px) {
     padding-top: 22px;
     margin-left: auto;
-  }  
+  }
 }
 
 .header__button {
@@ -263,20 +265,20 @@
   cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: linear;
-    &:hover {
-      background-color: $button-hover-color;
-    }
-    &:focus {
-      background-color: $button-hover-color;
-      color: $primary-white-color;
-    }
+  &:hover {
+    background-color: $button-hover-color;
+  }
+  &:focus {
+    background-color: $button-hover-color;
+    color: $primary-white-color;
+  }
 
-// mobile
+  // mobile
   @media screen and (max-width: 767px) {
     display: none;
   }
 
-// tablet
+  // tablet
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 32px;
     // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -288,3 +290,10 @@
   margin-left: 4px;
 }
 
+.mobile-menu-navigation {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
