@@ -1,0 +1,105 @@
+<!-- header -->
+    <header class="header" id="home">
+      <div class="main-nav container">
+        <a href="./index.html" class="logo header__logo link">
+          <img
+                srcset="
+                ./images/logo_40.png 40w,
+                ./images/logo_80.png 80w,
+                ./images/logo_48.png 48w,
+                ./images/logo_96.png 96w,
+                ./images/logo_60.png 60w,
+                ./images/logo_120.png 120w
+                "
+                sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 40px, 100vw"
+                src="./images/logo_40.png"
+                alt="logo"
+              />
+        </a>
+          <nav>
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="#home" class="site-nav__link link">Home</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#how-its-made" class="site-nav__link link">How it’s made?</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#products" class="site-nav__link link">Our products</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contact" class="site-nav__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        <div class="mobile-menu">
+          <button
+            class="menu-toggle js-open-menu "
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__icon" width="32" height="32">
+              <use class="icon-menu" href="./images/sprite.svg#icon-open-menu"></use>
+            </svg>
+          </button>    
+        </div>
+        <div class="btn-order">
+          <button type="button" class="header__button js-open-modal" data-modal="9">
+              <span>Buy now</span>
+              <svg class="button-arrow__icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-button-arrow"></use>
+              </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu ">
+        <svg class="menu-toggle__icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <a href="./index.html" class="logo header__logo link">
+        <img
+            srcset="
+            ./images/logo_40.png 40w,
+            ./images/logo_80.png 80w,
+            ./images/logo_48.png 48w,
+            ./images/logo_96.png 96w
+            "
+            sizes="(min-width: 768px) 48px, (max-width: 767px) 40px, 100vw"
+            src="./images/logo_40.png"
+            alt="logo"
+          />
+          </a>
+      </a>
+      <ul class="mobile-nav list">
+        <li class="mobile-nav__item">
+          <a href="#home" class="mobile-nav__link link">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#how-its-made" class="mobile-nav__link link">How it’s made?</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#products" class="mobile-nav__link link">Our products</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contact" class="mobile-nav__link link">Contact</a>
+        </li>
+      </ul>
+      <div class="mobile-btn-order">
+        <button type="button" class="mobile-menu__button js-open-modal" data-modal="9">
+          <span>Buy now</span>
+          <svg class="button-arrow__icon" width="12" height="12">
+            <use href="./images/sprite.svg#icon-button-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
