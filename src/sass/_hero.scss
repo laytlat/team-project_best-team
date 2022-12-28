@@ -29,6 +29,8 @@
             width: 134px;
             height: 42px;
 
+            padding: 11px 26px;
+
             align-items: center;
             text-align: center;
 
@@ -38,10 +40,12 @@
             font-size: 14px;
             line-height: 18px;
             cursor: pointer;
+            text-decoration: none;
 
             border: 2px solid $button-color;
             border-radius: 10px;
             background-color: $background-color;
+            color: $button-text-color;
             &:hover{
                 border-color: $button-hover-color;
             }

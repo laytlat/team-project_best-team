@@ -8,6 +8,10 @@
     .hero-title{
         margin-top: 12px;
         &__text{
+            span{
+                font-size: 38px;
+                line-height: 48px;
+            }
             width: 247px;
             height: 97px;
 
@@ -78,8 +82,68 @@
         }
     }
 }
+@media screen and (max-width: 480px) {
+    .hero{
+        background-image: url(../images/krapki-mobile.svg);
+        width: 100%;
+        background-position: bottom right;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .hero-title{
+        margin-top: 35px;
+        margin-bottom: 150px;
+        &__text{
+            span{
+                font-size: 38px;
+                line-height: 48px;
+            }
+            font-size: 26px;
+            line-height: 33px;
+            margin-bottom: 32;
+        }
+        &__button{
+            width: 108px;
+            height: 38px;
 
-@media screen and(max-width: 480px) {
+            font-size: 12px;
+            line-height: 15px;
+
+            border-radius: 8px;
+        }
+        &__href{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .hero-icecream{
+        display: none;
+    }
+    .hero-mainice{
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        width: 218px;
+        height: 267px;
+        
+        &__mobile{
+            display: none;
+        }
+        &__desktop{
+            display: none;
+        }
+        &__tablet{
+            display: flex;
+            padding-top: 50px;
+        }
+    }
+    .hero-sub{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 320px) {
     .hero{
         background-image: url(../images/krapki-mobile.svg);
         width: 100%;
@@ -91,10 +155,15 @@
     }
     .hero-title{
         margin-top: 45px;
+        margin-bottom: 0;
         &__text{
-            margin-bottom: 32;
+            span{
+                font-size: 38px;
+                line-height: 48px;
+            }
             font-size: 26px;
             line-height: 33px;
+            margin-bottom: 32;
         }
         &__button{
             width: 108px;
