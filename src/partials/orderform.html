@@ -6,23 +6,83 @@
     </button>
     <h2 class="modal__title">Buy now</h2>
     <form name="form-order" class="order__form"> 
-      <div class="input-line check-line">
+      <ul class="products__list">
+        <li class="products__item">
+          <div class="input-line check-line">
             <input
-              id="checkbox-agree"
-              name="checkbox-agree"
+              id="checkbox-choice"
+              name="checkbox-choice"
               type="checkbox"
               class="visually-hidden"
             />
-            <label for="checkbox-agree" class="checkbox-agree">
-              <span class="icon-wrapper">
-                <!-- <svg class="agree-icon" width="13" height="9">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg> -->
-              </span>
-              <span>Погоджуюся з розсилкою та приймаю</span>
-              <a href="" class="agree-text link">Умови договору</a>
+            <label for="checkbox-choice" class="checkbox-choice">
+              <div class="products-wrapper">
+                <img
+                  srcset="./images/cream_132.jpg 1x,
+                  ./images/cream_264.jpg 2x"
+                  src="./images/cream_132.jpg"
+                  class="products__img"
+                  alt="ice cream"
+                  width="132";
+                >
+              </div>
+                <div class="products__card">
+                  <h3 class="products__title">ice cream</h3>
+                </div>
             </label>
           </div>
+        </li>
+        <li class="products__item">
+          <div class="input-line check-line">
+            <input
+              id="checkbox-choice"
+              name="checkbox-choice"
+              type="checkbox"
+              class="visually-hidden"
+            />
+            <label for="checkbox-choice" class="checkbox-choice">
+              <div class="products-wrapper accent-second-card">
+                <img
+                  srcset="./images/coffee_132.jpg 1x,
+                  ./images/coffee_264.jpg 2x"
+                  src="./images/coffee_132.jpg"
+                  class="products__img"
+                  alt="ice coffee"
+                  width="132";
+                >
+              </div>
+                <div class="products__card accent-second-border">
+                  <h3 class="products__title">ice coffee</h3>
+                </div>
+            </label>
+          </div>
+        </li>
+        <li class="products__item">
+          <div class="input-line check-line">
+            <input
+              id="checkbox-choice"
+              name="checkbox-choice"
+              type="checkbox"
+              class="visually-hidden"
+            />
+            <label for="checkbox-choice" class="checkbox-choice">
+              <div class="products-wrapper accent-third-card">
+                <img
+                  srcset="./images/shake_132.jpg 1x,
+                  ./images/shake_264.jpg 2x"
+                  src="./images/shake_132.jpg"
+                  class="products__img"
+                  alt="shake"
+                  width="132";
+                >
+              </div>
+                <div class="products__card accent-third-border">
+                  <h3 class="products__title">milkshake</h3>
+                </div>
+            </label>
+          </div>
+        </li>
+      </ul>
       <div class="order__wrapper">
         <input 
           name="user-name"
@@ -41,7 +101,8 @@
           type="number"
           class="order__input"
           placeholder="Phone"
-          pattern="^\d{3}-\d{4}-\d{2}-\d{2}$"
+          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          title="+380 (--) --- -- --"
           required
         >
       </div>
