@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -41,12 +42,15 @@ p {
 
 .container {
   max-width: 1200px;
+
+  position: relative;
+
   padding: 0 20px;
   margin: 0 auto;
-  
+
   // tablet
   @media screen and (min-width: 768px) {
-    padding: 0 32px; 
+    padding: 0 32px;
   }
 
   // desktop
@@ -67,4 +71,3 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
-

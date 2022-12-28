@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 32px;
+    }
+    .hero{
+        background-image: url(../images/krapki-desktop.svg);
+    }
+    .hero-title{
+        margin-top: 12px;
+        &__text{
+            width: 247px;
+            height: 97px;
+
+            margin-bottom: 24px;
+
+            font-size: 26px;
+            line-height: 33px;
+        }
+        &__button{
+            width: 108px;
+            height: 38px;
+
+            font-size: 12px;
+            line-height: 15px;
+
+            border-radius: 8px;
+        }
+        &__href{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+
+    .hero-icecream{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        &__img{
+            width: 151px;
+            height: 151px;   
+        }
+        &__text{
+            font-size: 12px;
+            margin-top: 9%;
+            margin-left: 32px;
+            width: 149px;
+            height: 85px;
+        }
+        &__arrow{
+            margin-top: 12px;
+        }
+    }
+    .hero-mainice{
+        margin: 0;
+        &__tablet{
+            display: block;
+            width: 268px;
+            height: 329px;
+            margin-right: 59px;
+        }
+        &__desktop{
+            display: none;
+        }
+        &__mobile{
+            display: none;
+        }
+    }
+    .hero-sub{
+        margin-top: 8px;
+        padding-right: 32px;
+        &__number{
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__place{
+            padding-bottom: 20px;
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .hero{
+        background-image: url(../images/krapki-mobile.svg);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .hero-title{
+        margin-top: 45px;
+        &__text{
+            font-size: 26px;
+            line-height: 33px;
+            margin-bottom: 32;
+        }
+        &__button{
+            width: 108px;
+            height: 38px;
+
+            font-size: 12px;
+            line-height: 15px;
+
+            border-radius: 8px;
+        }
+        &__href{
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    .hero-icecream{
+        display: none;
+    }
+    .hero-mainice{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 177px;
+        height: 217px;
+        margin-top: 19px;
+        display: flex;
+        &__mobile{
+            display: flex;
+
+        }
+        &__desktop{
+            display: none;
+        }
+        &__tablet{
+            display: none;
+        }
+    }
+    .hero-sub{
+        display: none;
+    }
+}
