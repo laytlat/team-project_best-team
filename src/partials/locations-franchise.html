@@ -1,0 +1,118 @@
+<!-- Элементы для вызова модальных окон, могут быть любые -->
+<!-- locations-franchise -->
+
+<!-- <button data-modal-open type="button" class="button">Замовити послугу</button> -->
+
+<!-- modal-locations -->
+<div class="modal modal-locations" data-modal="6">
+  <button class="modal-locations__cross js-modal-close">
+    <svg class="modal-locations__icon" width="20" height="20">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal-locations__title">Our Locations</h3>
+  <picture>
+    <!-- Tablet screen Desktop screen -->
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/map-desk.webp 1x, ./images/map-desk@2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/map-desk.jpg 1x, ./images/map-desk@2x.jpg 2x"
+      type="image/jpg"
+    />
+    <!-- Mobile screen -->
+    <source
+      media="(max-width: 768px)"
+      srcset="./images/map-mob.webp 1x, ./images/map-mob@2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      media="(max-width: 768px)"
+      srcset="./images/map-mob.jpg 1x, ./images/map-mob@2x.jpg 2x"
+      type="image/jpg"
+    />
+    <img
+      class="modal-locations__map"
+      src="./images/map-mob.jpg"
+      alt="Map"
+      width="448"
+      height="260"
+      loading="lazy"
+    />
+  </picture>
+
+  <a
+    class="modal-locations__link link"
+    href="https://goo.gl/maps/VCjokpn6cVn6QoZP7"
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    >Open map</a
+  >
+</div>
+
+<!-- modal-franchise -->
+<div class="modal modal-franchise" data-modal="7">
+  <button class="modal-franchise__cross js-modal-close">
+    <svg class="modal-franchise__icon" width="20" height="20">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal-franchise__title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h3>
+  <p class="modal-franchise__text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+  <form class="form-franchise">
+    <label for="name" class="form-franchise__label"></label>
+    <input
+      type="text"
+      class="form-franchise__input"
+      name="name"
+      id="name"
+      placeholder="Name"
+    />
+
+    <label for="tel" class="form-franchise__label"></label>
+    <input
+      type="tel"
+      class="form-franchise__input"
+      name="phone"
+      id="tel"
+      placeholder="Phone"
+      pattern="(?=.*\d).{10,}"
+      title="Password cannot be
+    less than thirteen characters."
+    />
+
+    <label for="mail" class="form-franchise__label"></label>
+    <input
+      type="email"
+      class="form-franchise__input"
+      name="email"
+      id="mail"
+      placeholder="Email"
+    />
+
+    <label for="comment" class="form-franchise__label"></label>
+    <textarea
+      class="textarea-franchise"
+      name="textarea"
+      id="comment"
+      rows="3"
+      placeholder="Comment"
+    ></textarea>
+
+    <button type="submit" class="button-submit">Submit</button>
+  </form>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
