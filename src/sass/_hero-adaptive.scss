@@ -1,7 +1,6 @@
 @media screen and (max-width: 768px) {
     .container{
-        margin: 0 32px;
-        max-width: 768px;
+        padding: 0 32px;
     }
     .hero{
         background-image: url(../images/krapki-desktop.svg);
@@ -51,9 +50,19 @@
         }
     }
     .hero-mainice{
-        width: 268px;
-        height: 329px;
-        margin-right: 59px;
+        margin: 0;
+        &__tablet{
+            display: block;
+            width: 268px;
+            height: 329px;
+            margin-right: 59px;
+        }
+        &__desktop{
+            display: none;
+        }
+        &__mobile{
+            display: none;
+        }
     }
     .hero-sub{
         margin-top: 8px;
@@ -69,14 +78,15 @@
     }
 }
 
-@media screen and(max-width: 320px) {
+@media screen and(max-width: 480px) {
     .hero{
         background-image: url(../images/krapki-mobile.svg);
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container{
-        margin: 0 20px;
-        max-width: 320px;
+        padding: 0 20px;
     }
     .hero-title{
         margin-top: 45px;
@@ -104,10 +114,22 @@
     }
     .hero-mainice{
         position: relative;
-        left: 22%;
+        margin-left: auto;
+        margin-right: auto;
         width: 177px;
         height: 217px;
         margin-top: 19px;
+        display: flex;
+        &__mobile{
+            display: flex;
+
+        }
+        &__desktop{
+            display: none;
+        }
+        &__tablet{
+            display: none;
+        }
     }
     .hero-sub{
         display: none;
