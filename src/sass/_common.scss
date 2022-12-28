@@ -1,5 +1,14 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   color: $main-color;
@@ -32,7 +41,32 @@ p {
 
 .container {
   max-width: 1200px;
-  padding: 0 16px;
-  margin: 0 auto;
+
   position: relative;
+
+  padding: 0 20px;
+  margin: 0 auto;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    padding: 0 16px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
