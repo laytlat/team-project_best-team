@@ -1,127 +1,118 @@
 <div class="modal order" data-modal="9">
-    <button class="modal__close js-modal-close">
-      <svg class="modal__close-icon" width="20" height="20">
-        <use href="./images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal__title">Buy now</h2>
-    <form name="form-order" class="order__form"> 
-      <ul class="products__list">
-        <li class="products__item">
-          <div class="input-line check-line">
-            <input
-              id="checkbox-choice_1"
-              name="checkbox-choice"
-              type="checkbox"
-              class="visually-hidden"
-            />
-            <label for="checkbox-choice_1" class="checkbox-choice">
-              <span class="products-wrapper">
-                <img
-                  srcset="./images/cream_132.jpg 1x,
-                  ./images/cream_264.jpg 2x"
-                  src="./images/cream_132.jpg"
-                  class="products__img"
-                  alt="ice cream"
-                  width="132"
-                >
-              </span>
-                <span class="products__card">
-                  <span class="products__dscr">ice cream</span>
-                </span>
-            </label>
-          </div>
-        </li>
-        <li class="products__item">
-          <div class="input-line check-line">
-            <input
-              id="checkbox-choice_2"
-              name="checkbox-choice"
-              type="checkbox"
-              class="visually-hidden"
-            />
-            <label for="checkbox-choice_2" class="checkbox-choice_2">
-              <span class="products-wrapper accent-second-card">
-                <img
-                  srcset="./images/coffee_132.jpg 1x,
-                  ./images/coffee_264.jpg 2x"
-                  src="./images/coffee_132.jpg"
-                  class="products__img"
-                  alt="ice coffee"
-                  width="132"
-                >
-              </span>
-                <span class="products__card accent-second-border">
-                  <span class="products__dscr">ice coffee</span>
-                </span>
-            </label>
-          </div>
-        </li>
-        <li class="products__item">
-          <div class="input-line check-line">
-            <input
-              id="checkbox-choice_3"
-              name="checkbox-choice"
-              type="checkbox"
-              class="visually-hidden"
-            />
-            <label for="checkbox-choice_3" class="checkbox-choice_3">
-              <span class="products-wrapper accent-third-card">
-                <img
-                  srcset="./images/shake_132.jpg 1x,
-                  ./images/shake_264.jpg 2x"
-                  src="./images/shake_132.jpg"
-                  class="products__img"
-                  alt="shake"
-                  width="132"
-                >
-              </span>
-                <span class="products__card accent-third-border">
-                  <span class="products__dscr">milkshake</span>
-                </span>
-            </label>
-          </div>
-        </li>
-      </ul>
-      <div class="order__wrapper">
-        <input 
-          name="user-name"
-          id="user-name"
-          type="text"
-          class="order__input"
-          placeholder="Name"
-          pattern="[A-Za-z]{1,32}"
-          required
-        >
-      </div>
-      <div class="order__wrapper">
-        <input
-          name="user-tel"
-          id="user-tel"
-          type="tel"
-          class="order__input"
-          placeholder="Phone"
-          pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-          title="+380 (--) --- -- --"
-          required
-        >
-      </div>
-      <textarea
-        name="user-text"
-        id="user-text"
-        placeholder="Comment"
-        cols="30"
-        rows="10"
-        class="order__textarea"
-      >
-      </textarea>
-      <button 
-        type="submit"
-        class="order__button"
-      >
-      Submit
-      </button>
-    </form>
+  <button class="modal__close js-modal-close">
+    <svg class="modal__close-icon" width="20" height="20">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="modal__title">Buy now</h2>
+  <form name="form-order" class="order__form">
+    <ul class="products__list">
+      <li class="products__item">
+        <div class="input-line check-line">
+          <input
+            id="checkbox-choice_1"
+            name="checkbox-choice"
+            type="checkbox"
+            class="visually-hidden"
+          />
+          <label for="checkbox-choice_1" class="checkbox-choice">
+            <span class="products-wrapper">
+              <img
+                srcset="./images/cream_132.jpg 1x, ./images/cream_264.jpg 2x"
+                src="./images/cream_132.jpg"
+                class="products__img"
+                alt="ice cream"
+                width="132"
+              />
+            </span>
+            <span class="products__card">
+              <span class="products__dscr">ice cream</span>
+            </span>
+          </label>
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="input-line check-line">
+          <input
+            id="checkbox-choice_2"
+            name="checkbox-choice"
+            type="checkbox"
+            class="visually-hidden"
+          />
+          <label for="checkbox-choice_2" class="checkbox-choice_2">
+            <span class="products-wrapper accent-second-card">
+              <img
+                srcset="./images/coffee_132.jpg 1x, ./images/coffee_264.jpg 2x"
+                src="./images/coffee_132.jpg"
+                class="products__img"
+                alt="ice coffee"
+                width="132"
+              />
+            </span>
+            <span class="products__card accent-second-border">
+              <span class="products__dscr">ice coffee</span>
+            </span>
+          </label>
+        </div>
+      </li>
+      <li class="products__item">
+        <div class="input-line check-line">
+          <input
+            id="checkbox-choice_3"
+            name="checkbox-choice"
+            type="checkbox"
+            class="visually-hidden"
+          />
+          <label for="checkbox-choice_3" class="checkbox-choice_3">
+            <span class="products-wrapper accent-third-card">
+              <img
+                srcset="./images/shake_132.jpg 1x, ./images/shake_264.jpg 2x"
+                src="./images/shake_132.jpg"
+                class="products__img"
+                alt="shake"
+                width="132"
+              />
+            </span>
+            <span class="products__card accent-third-border">
+              <span class="products__dscr">milkshake</span>
+            </span>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <div class="order__wrapper">
+      <input
+        name="user-name"
+        id="user-name"
+        type="text"
+        class="order__input"
+        placeholder="Name"
+        pattern="[A-Za-z]{1,32}"
+        required
+      />
+    </div>
+    <div class="order__wrapper">
+      <input
+        name="user-tel"
+        id="user-tel"
+        type="tel"
+        class="order__input"
+        placeholder="Phone"
+        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+        title="+380 (--) --- -- --"
+        required
+      />
+    </div>
+    <textarea
+      class="order__textarea"
+      name="user-text"
+      id="user-text"
+      rows="3"
+      placeholder="Comment"
+    ></textarea>
+
+    <button type="submit" class="order__button">Submit</button>
+  </form>
 </div>
 
 <div class="overlay js-overlay-modal"></div>
