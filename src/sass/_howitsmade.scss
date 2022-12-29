@@ -5,17 +5,17 @@ ul {
 }
 .how-itsmade {
   
-  @media screen and (min-width: 0px) 
+ /*@media screen and (min-width: 0px) 
   {
     padding-top: 61px;
     padding-bottom: 65px;
   }  
 
-  @media screen and (min-width: 768px) 
+ @media screen and (min-width: 768px) 
   {
    padding-top: 60px;
    padding-bottom: 180px;
-  }
+  }*/
 
   background-color: $background-color;
 }
@@ -710,4 +710,20 @@ ul {
   {
     margin-bottom: 40px;
   }  
+}
+
+.itsmade__information {
+  background-color: $background-color;
+}
+
+.how-itsmade__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }
