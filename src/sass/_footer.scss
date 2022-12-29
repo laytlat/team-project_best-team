@@ -1,19 +1,14 @@
 .footer {
   width: 100%;
-  background:$background-color;
+  background: $background-color;
   position: relative;
- 
-  
 }
 
-
 .footer--container {
-  
+  @media screen and(max-width:767px) {
+    padding: 0 20px;
+  }
 
- @media screen and(max-width:767px){
-  padding: 0 20px;
- }
-  
   @media screen and (min-width: 768px) {
     padding: 0 33px;
   }
@@ -31,12 +26,10 @@
   @media screen and(min-width: 768px) {
     font-size: 26px;
     margin-bottom: 8px;
-    
   }
   @media screen and(min-width: 1200px) {
     font-size: 30px;
     font-weight: 400;
-    
   }
 }
 .footer__text {
@@ -45,7 +38,7 @@
   font-size: 34px;
   line-height: calc(41 / 34);
   text-transform: uppercase;
-  @media screen and(max-width: 767px){
+  @media screen and(max-width: 767px) {
     margin-right: 100px;
   }
   @media screen and(min-width: 768px) {
@@ -55,19 +48,16 @@
   }
   @media screen and(min-width: 1200px) {
     font-size: 58px;
-    
   }
 }
 .footer__tittle {
   @media screen and(max-width:767px) {
-   
     margin-bottom: 60px;
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
     width: 352px;
     margin-bottom: 32px;
   }
-  
 }
 .footer__list {
   display: flex;
@@ -111,13 +101,13 @@
 }
 .footer__tel {
   text-decoration: none;
-  font-family: 'sans-serif';
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
   text-align: right;
   color: $main-color;
   @media screen and(min-width:768px) {
+    font-weight: 700;
     font-size: 14px;
   }
   @media screen and(min-width:1200px) {
@@ -141,7 +131,6 @@
   }
 }
 .copy__text {
- 
   margin: 0;
   font-family: 'Montserrat';
   font-style: normal;
@@ -158,18 +147,17 @@
   }
   @media screen and(min-width:1200px) {
     font-size: 12px;
-      border-top: 1px solid #E1E1E1;
-      padding: 12px 0;
-    }
+    border-top: 1px solid #e1e1e1;
+    padding: 12px 0;
   }
-  
+}
+
 .copy {
-  @media screen and(max-width:1199.07px){
-    border-top: 1px solid #E1E1E1;
+  @media screen and(max-width:1199.07px) {
+    border-top: 1px solid #e1e1e1;
   }
 
-  background:$background-color;
- 
+  background: $background-color;
 }
 
 .footer__box {
