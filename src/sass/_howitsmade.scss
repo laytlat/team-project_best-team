@@ -5,17 +5,15 @@ ul {
 }
 .how-itsmade {
   
- /*@media screen and (min-width: 0px) 
+ @media screen and (min-width: 0px) 
   {
     padding-top: 61px;
-    padding-bottom: 65px;
   }  
 
  @media screen and (min-width: 768px) 
   {
    padding-top: 60px;
-   padding-bottom: 180px;
-  }*/
+  }
 
   background-color: $background-color;
 }
@@ -680,15 +678,6 @@ ul {
     justify-content: center;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px)
-  {
-    margin-bottom: 80px;
-  }  
-
-  @media screen and (min-width: 1200px) 
-  {
-    margin-bottom: 146px;
-  }   
 
 }
 
@@ -713,6 +702,20 @@ ul {
 }
 
 .itsmade__information {
+
+  
+  @media screen and (min-width: 480px) and (max-width: 767px)
+  {
+     /*padding-top: 60px;*/
+     padding-bottom: 65px;
+  }  
+
+ @media screen and (min-width: 768px) 
+  {
+   padding-top: 60px;
+   padding-bottom: 180px;
+  }
+
   background-color: $background-color;
 }
 
