@@ -96,7 +96,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 280px;
     height: 420px;
     background: #aec6a5;
@@ -152,7 +152,6 @@
 
   &__svg {
     display: inline-block;
-    padding: 10px 10px;
     border: transparent;
     background-color: transparent;
     cursor: pointer;
