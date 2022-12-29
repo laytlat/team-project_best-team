@@ -10,7 +10,6 @@
         &__text{
             span{
                 font-size: 38px;
-                line-height: 48px;
             }
             width: 247px;
             height: 97px;
@@ -157,9 +156,11 @@
         margin-top: 45px;
         margin-bottom: 0;
         &__text{
+            width: 247px;
+            
+            line-height: 33px;
             span{
                 font-size: 38px;
-                line-height: 48px;
             }
             font-size: 26px;
             margin-bottom: 32;
@@ -176,6 +177,7 @@
         &__href{
             font-size: 12px;
             line-height: 15px;
+            margin-left: 12px;
         }
     }
     .hero-icecream{
