@@ -2,6 +2,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -42,6 +43,7 @@ p {
 
 .container {
   max-width: 1200px;
+  position: relative;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -70,6 +72,347 @@ p {
   margin: -1px;
 }
 
+.hero {
+  background-color: #84a178;
+  display: block;
+  overflow: hidden;
+  background-image: url(../images/krapki.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.hero-title {
+  margin-top: 21px;
+}
+.hero-title__text {
+  width: 367px;
+  margin-bottom: 28px;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero-title__button {
+  width: 134px;
+  height: 42px;
+  padding: 11px 26px;
+  align-items: center;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  background-color: #84a178;
+  color: #000000;
+}
+.hero-title__button:hover {
+  border-color: #0a8817;
+}
+.hero-title__button:focus {
+  border-color: #0a8817;
+  color: #ffffff;
+}
+.hero-title__button:disabled {
+  border-color: #ababab;
+}
+.hero-title__href {
+  margin-left: 34px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #f8d24e;
+}
+.hero-title__href:hover {
+  color: #0a8817;
+}
+.hero-title__href:focus {
+  color: #ffffff;
+}
+.hero-title__href:disabled {
+  color: #ababab;
+}
+
+.hero-icecream {
+  margin-top: 42px;
+  margin-bottom: 65px;
+  display: inline-flex;
+  justify-items: center;
+}
+.hero-icecream__img {
+  width: 225px;
+  height: 225px;
+}
+.hero-icecream__text {
+  width: 200px;
+  height: 80px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 15%;
+  margin-left: 16px;
+}
+.hero-icecream__arrow {
+  fill: #fcfcfc;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.hero-mainice {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 92px;
+}
+.hero-mainice__tablet {
+  display: none;
+}
+.hero-mainice__mobile {
+  display: none;
+}
+
+.hero-sub {
+  display: block;
+  margin-top: 22px;
+  padding-right: 32px;
+  list-style-type: none;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.hero-sub__number {
+  padding-bottom: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 56px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+.hero-sub__place {
+  padding-bottom: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #fcfcfc;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+  .hero {
+    background-image: url(../images/krapki-desktop.svg);
+  }
+  .hero-title {
+    margin-top: 12px;
+  }
+  .hero-title__text {
+    width: 247px;
+    height: 97px;
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .hero-title__text span {
+    font-size: 38px;
+  }
+  .hero-title__button {
+    width: 108px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+  .hero-title__href {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .hero-icecream {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .hero-icecream__img {
+    width: 151px;
+    height: 151px;
+  }
+  .hero-icecream__text {
+    font-size: 12px;
+    margin-top: 9%;
+    margin-left: 32px;
+    width: 149px;
+    height: 85px;
+  }
+  .hero-icecream__arrow {
+    margin-top: 12px;
+  }
+  .hero-mainice {
+    margin: 0;
+  }
+  .hero-mainice__tablet {
+    display: block;
+    width: 268px;
+    height: 329px;
+    margin-right: 59px;
+  }
+  .hero-mainice__desktop {
+    display: none;
+  }
+  .hero-mainice__mobile {
+    display: none;
+  }
+  .hero-sub {
+    margin-top: 8px;
+    padding-right: 32px;
+  }
+  .hero-sub__number {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .hero-sub__place {
+    padding-bottom: 20px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .hero {
+    background-image: url(../images/krapki-mobile.svg);
+    width: 100%;
+    background-position: bottom right;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero-title {
+    margin-top: 35px;
+    margin-bottom: 161px;
+  }
+  .hero-title__text {
+    width: 247px;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 32;
+  }
+  .hero-title__text span {
+    font-size: 38px;
+  }
+  .hero-title__button {
+    width: 108px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+  .hero-title__href {
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 12px;
+  }
+  .hero-icecream {
+    display: none;
+  }
+  .hero-mainice {
+    top: 88px;
+    right: 0;
+    margin-right: 20px;
+    width: 218px;
+    height: 267px;
+  }
+  .hero-mainice__mobile {
+    display: none;
+  }
+  .hero-mainice__desktop {
+    display: none;
+  }
+  .hero-mainice__tablet {
+    display: flex;
+  }
+  .hero-sub {
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .hero {
+    background-image: url(../images/krapki-mobile.svg);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero-title {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+  .hero-title__text {
+    width: 247px;
+    line-height: 33px;
+    font-size: 26px;
+    margin-bottom: 32;
+  }
+  .hero-title__text span {
+    font-size: 38px;
+  }
+  .hero-title__button {
+    width: 108px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+  .hero-title__href {
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 12px;
+  }
+  .hero-icecream {
+    display: none;
+  }
+  .hero-mainice {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 177px;
+    height: 217px;
+    margin-top: 19px;
+    display: flex;
+  }
+  .hero-mainice__mobile {
+    display: flex;
+  }
+  .hero-mainice__desktop {
+    display: none;
+  }
+  .hero-mainice__tablet {
+    display: none;
+  }
+  .hero-sub {
+    display: none;
+  }
+}
 .header {
   background-color: #84a178;
 }
@@ -348,6 +691,7 @@ p {
 }
 
 .mobile-menu-navigation {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -502,7 +846,8 @@ p {
 }
 
 .products__card {
-  width: 132;
+  display: block;
+  width: 132px;
   height: 137px;
   padding-top: 97px;
   padding-bottom: 20px;
@@ -513,6 +858,18 @@ p {
 }
 .products__card:hover, .products__card:focus {
   background-color: #96AF8C;
+}
+
+.check-line input:checked + .checkbox-choice .products__card {
+  background-color: #96AF8C;
+}
+
+.check-line input:checked + .checkbox-choice_2 .products__card {
+  background-color: #EFD478;
+}
+
+.check-line input:checked + .checkbox-choice_3 .products__card {
+  background-color: #D6936D;
 }
 
 .accent-second-border {
@@ -533,7 +890,7 @@ p {
   background-color: #D6936D;
 }
 
-.products__title {
+.products__dscr {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -2108,9 +2465,12 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 280px;
   height: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
   background: #aec6a5;
   border-radius: 24px;
 }
@@ -2118,17 +2478,22 @@ ul {
   .prodcard__item {
     width: 224px;
     height: 428px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 25px;
   }
 }
 @media screen and (min-width: 1200px) {
   .prodcard__item {
     width: 370px;
     height: 536px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 35px;
   }
 }
 .prodcard__title {
   margin-top: 123px;
-  margin-bottom: 40px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -2149,17 +2514,11 @@ ul {
   }
 }
 .prodcard__text {
-  margin: 0 40px 30px;
   font-size: 14px;
   line-height: 1.76;
   text-align: center;
   letter-spacing: 0.04em;
   color: #131313;
-}
-@media screen and (min-width: 768px) {
-  .prodcard__text {
-    margin: 0 20px 30px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .prodcard__text {
@@ -2168,7 +2527,6 @@ ul {
 }
 .prodcard__svg {
   display: inline-block;
-  padding: 10px 10px;
   border: transparent;
   background-color: transparent;
   cursor: pointer;
@@ -2176,7 +2534,6 @@ ul {
 .prodcard__iconarrow {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
 }
 
 .item__icecream::before {
@@ -2640,6 +2997,10 @@ ul {
   outline: transparent;
 }
 
+.ingredients__button:disabled {
+  background: #ababab;
+}
+
 .ingredients__title {
   font-family: "Montserrat";
   font-weight: 500;
@@ -2652,7 +3013,6 @@ ul {
 
 .ingredients__list {
   font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.76;
