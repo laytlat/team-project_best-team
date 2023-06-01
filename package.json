@@ -1,21 +1,21 @@
 {
-  "name": "project_best-team",
+  "name": "team-project_best-team",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://laytlat.github.io/project_best-team",
+  "homepage": "https://laytlat.github.io/team-project_best-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project_best-team/"
+    "build": "parcel build src/*.html --public-url /team-project_best-team/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laytlat/project_best-team.git"
+    "url": "git+https://github.com/laytlat/team-project_best-team.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/laytlat/project_best-team/issues"
+    "url": "https://github.com/laytlat/team-project_best-team/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
